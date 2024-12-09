@@ -22,11 +22,17 @@
 </head>
 
 <body>
-    <!-- INDPAKNING AF BANNER OG LOGO -->
+    <!-- INDPAKNING AF LOGO OG "BANNER" -->
     <article class="banner-container">        
-        <img src="image/navbar/radar.logo.webp" alt="Logo af brabrand if" class="logo-img">
-        <a href=""><img src="images/navbar.footer/banner.webp" alt="Et banner af Brabrand if" class="banner-img"></a>
-
+        <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a>
+        <img src="image/navbar/radar.logo.webp" alt="logo" class="logo-img">
+    
+        <!-- GØR DET MULIGT AT SØGE PÅ HJEMMESIDEN -->
+    <form class="search-form" action="#" method="GET">
+        <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
+        <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
+    </form>
+    </article>
 
     <header> 
         <input type="checkbox" id="menu-bar"> <!-- KONTROLLERER OM MENUEN ER ÅBEN -->
@@ -75,6 +81,7 @@
     </main>
 
     <footer>
+        <!-- OVERSIGT OVER SOCIALE MEDIER -->
         <article class="footer-container">
             <article class="socials">
                 <!-- FØLGENDE LINKS VIRKER OG FØRER VIDERE TIL EKSTERNE SIDER -->
@@ -87,7 +94,8 @@
                 <span class="footer-icon"><a href="https://www.youtube.com/user/radarliverec" target="_blank">
                     <img src="image/footer/youtube.icon.webp" alt="Youtube logo" class="footerlogo" aria-label="Gå til Youtube"> </a></span>
             </article>
-                
+            
+            <!-- OVERSIGT OVER KONTAKTMULIGHEDER SAMT ADRESSE -->
             <article class="kontakt">
                 <a href="https://maps.app.goo.gl/uQbbWJaSaAvCWsMn6" target="_blank">
                     Karen Wegeners Gade 6<br>
@@ -101,7 +109,7 @@
             
             <article class="andet">
                 <a href="index.html" class="nyhedsbrev">NYHEDSBREV </a>
-                <a href="index.html" class="vilkår og betingelse">VILKÅR & BETINGELSER</a>
+                <a href="index.html" class="vilkår og betingelser">VILKÅR & BETINGELSER</a>
                 <a href="index.html" class="FAQ">FAQ</a> 
             </article>
             
