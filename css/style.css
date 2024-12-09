@@ -15,10 +15,10 @@ body {
   }
 
 
-/*  mobile */ 
-@media(max-width: 600px) {
+/* MOBIL */ 
+@media (max-width: 600px) {
 }
 
-/* tablet */ 
+/* TABLET */ 
 @media (min-width: 601px) and (max-width: 991px) {
 }
