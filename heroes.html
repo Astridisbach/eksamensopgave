@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="da"> <!-- ANGIVER DOKUMENTTYPE SAMT SPROGET -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+
+    <!-- META-TAGS FOR SØGEMASKINEOPTIMERING -->
+    <meta name="description" content="">
+    <meta name="Radar" content="hjemmeside">
+    <meta name="keywords" content="">
+
+    <!-- LINKER TIL CSS STYLESHEETS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="heroes.css">
+    <link rel="icon" href="image/navbar/favicon.webp" sizes="32x32" type="image">
+    
+    <!-- DETTE TILLADER MIG AT BRUGE DEN ØNSKEDE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Koulen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- INDPAKNING AF LOGO OG "BANNER" -->
+    <article class="banner-container">        
+        <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a>
+        <img src="image/navbar/radar.logo.webp" alt="logo" class="logo-img">
+    
+        <!-- GØR DET MULIGT AT SØGE PÅ HJEMMESIDEN -->
+    <form class="search-form" action="#" method="GET">
+        <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
+        <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
+    </form>
+    </article>
+
+    <header> 
+        <input type="checkbox" id="menu-bar"> <!-- KONTROLLERER OM MENUEN ER ÅBEN -->
+        <label for="menu-bar">Menu</label> <!-- FOR AT VISE MENUPUNKTER -->
+
+        <nav class="navbar"> <!-- NAVBAR BEGYNDER -->
+            <ul>
+                
+                <li><a href="#">Om Radar</a> <!-- DROPDOWN -->
+                    <ul>
+                        <li><a href="index.html">Historie</a></li>
+                        <li><a href="mission.html">Mission og Vision</a></li>
+                        <li><a href="index.html">Succeshistorier</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">Events</a> <!-- DROPDOWN -->
+                    <ul>
+                        <li><a href="index.html">Kommende events og koncerter</a></li>
+                        <li><a href="index.html">Tidligere events</a></li>
+                        <li><a href="index.html">Specialarrangementer</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">Støt Radar</a> <!-- DROPDOWN -->
+                    <ul>
+                        <li><a href="index.html">Crowdfunding</a></li>
+                        <li><a href="index.html">Medlemskab</a></li>
+                        <li><a href="frivillig.html">Frivillige</a></li>
+                        <li><a href="index.html">Samarbejde</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">Fællesskab</a> <!-- DROPDOWN -->
+                    <ul>
+                        <li><a href="heroes.html">Radar Heroes</a></li>
+                        <li><a href="index.html">Idébank</a></li>
+                    </ul>
+                </li>
+           
+            </ul>
+        </nav> <!-- NAVBAR SLUTTER -->
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+        <!-- OVERSIGT OVER SOCIALE MEDIER -->
+        <article class="footer-container">
+            <article class="socials">
+                <!-- FØLGENDE LINKS VIRKER OG FØRER VIDERE TIL EKSTERNE SIDER -->
+                <span class="footer-icon"><a href="https://www.facebook.com/radarlive" target="_blank">
+                    <img src="image/footer/facebook.icon.webp" alt="Facebook logo" class="footerlogo" aria-label="Gå til Facebook"></a></span>
+                <span class="footer-icon"><a href="https://www.instagram.com/radarlive/" target="_blank">
+                    <img src="image/footer/insta.icon.webp" alt="Instagram logo" class="footerlogo" aria-label="Gå til Instagram"> </a></span>
+                <span class="footer-icon"><a href="https://open.spotify.com/user/radarlive" target="_blank">
+                    <img src="image/footer/spotify.webp" alt="Spotify logo" class="footerlogo" aria-label="Gå til Spotify"></a></span>
+                <span class="footer-icon"><a href="https://www.youtube.com/user/radarliverec" target="_blank">
+                    <img src="image/footer/youtube.icon.webp" alt="Youtube logo" class="footerlogo" aria-label="Gå til Youtube"> </a></span>
+            </article>
+            
+            <!-- OVERSIGT OVER KONTAKTMULIGHEDER SAMT ADRESSE -->
+            <article class="kontakt">
+                <a href="https://maps.app.goo.gl/uQbbWJaSaAvCWsMn6" target="_blank">
+                    Karen Wegeners Gade 6<br>
+                    DK 8000 Aarhus C
+                </a>
+                <br>
+                Telefon <a href="tel:+4586760344">+45 8676 0344</a><br>
+                Kontakt: <a href="mailto:kontakt@radarlive.dk">kontakt@radarlive.dk</a><br>
+                Bookingforespørgsler: <a href="mailto:booking@radarlive.dk">booking@radarlive.dk</a>
+            </article>
+            
+            <article class="andet">
+                <a href="index.html" class="nyhedsbrev">NYHEDSBREV </a>
+                <a href="index.html" class="vilkår og betingelser">VILKÅR & BETINGELSER</a>
+                <a href="index.html" class="FAQ">FAQ</a> 
+            </article>
+            
+        </article>
+    </footer>
+</body>
+</html>
