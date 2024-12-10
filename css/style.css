@@ -1,14 +1,144 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* MOBIL */ 
-@media (max-width: 600px) {
+/* GENERELLE STILINDSTILLINGER */
+body {
+    font-family: 'Jockey One', sans-serif;
+    background: linear-gradient(to bottom, #a9b4df, #848484 ,#6c6c6c);
+    color: #5e4795;
+    margin: 0;
+    padding: 0;
 }
 
-/* TABLET */ 
-@media (min-width: 601px) and (max-width: 991px) {
+/* STIL FOR LOGO */
+.logo-container {
+    text-align: right;
+    padding: 20px;
+    position: right;
+}
+
+.logo-img {
+    width: 10%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.logo-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-height: 100px;
+}
+
+/* STIL FOR SØGEFELTET */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5e4795;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #5e4795;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* NAVBAR STIL */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    position: relative;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5e4795;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #3d3570;
+}
+
+/* STYLE FOR DROPDOWN MENUPUNKTER */
+.navbar li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.navbar li:hover > ul {
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    background-color: #313131;
+    padding: 40px 20px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+.socials {
+    display: flex;
+}
+
+.footer-icon {
+    margin-right: 10px;
+}
+
+.footerlogo {
+    width: 30px;
+    height: 30px;
+}
+
+.kontakt, .andet {
+    text-align: left;
+    float: left;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #5e4795;
+}
+
+footer span {
+    display: block;
 }

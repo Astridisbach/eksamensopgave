@@ -11,8 +11,9 @@
     <meta name="keywords" content="">
 
     <!-- LINKER TIL CSS STYLESHEETS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="image/navbar/favicon.webp" sizes="32x32" type="image">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="image/navbar/favicon.webp" sizes="32x32" type="image/png">
     
     <!-- DETTE TILLADER MIG AT BRUGE DEN ØNSKEDE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +23,7 @@
 
 <body>
     <!-- INDPAKNING AF LOGO OG "BANNER" -->
-    <article class="banner-container">        
-        <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a>
+    <section class="logo-container">        
         <img src="image/navbar/radar.logo.webp" alt="logo" class="logo-img">
     
         <!-- GØR DET MULIGT AT SØGE PÅ HJEMMESIDEN -->
@@ -31,7 +31,7 @@
         <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
         <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
     </form>
-    </article>
+    </section>
 
     <header> 
         <input type="checkbox" id="menu-bar"> <!-- KONTROLLERER OM MENUEN ER ÅBEN -->
@@ -74,6 +74,11 @@
            
             </ul>
         </nav> <!-- NAVBAR SLUT -->
+        
+        <section class="banner-img">
+            <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a>
+        </section>
+    
     </header>
 
     <main>
@@ -88,7 +93,7 @@
             
             <article class="anne-roem">
                 <p class="event-name">29/01 ANNA ROEMER</p>
-                <img src="image/forside/annaroemer.webp" alt="Anna Roemer" />
+                <img src="image/forside/annaroemer.webp" alt="Anna Roemer"/>
             </article>
     
             <ul class="event-liste">
@@ -113,7 +118,7 @@
             <article class="frivillig-tilmelding"> <!-- FRIVILLIG TILMELDING -->
                 <img src="image/frivillig/frivillig.webp" alt="frivillig-foto">
                 <h3 class="frivillig-tekst">VÆR MED TIL AT GØRE EN FORSKEL - BLIV FRIVILLIG!</h3>
-                <a href="frivillig.html" button class="tilmelding">TILMELD DIG HER</a>
+                <button onclick="window.location.href='frivillig.html'" class="tilmelding">TILMELD</button>
             </article>
             
             <article class="donation"> <!-- DONATION -->
@@ -131,7 +136,7 @@
 
         <section class="nyhedsbrev-container"> <!-- TILMELDING NYHEDSBREV -->
             <article class="nyhedsbrev-tekst">
-                <h1>NYHDEDSBREV</h1>
+                <h2>NYHEDSBREV</h2>
                 <p>Modtag nyheder om kommende koncerter, arrangementer og events.</p>
             </article>
 
@@ -146,7 +151,6 @@
             <img src="image/forside/sponsor/statenskunstfond.webp" alt="staten-spons">
             <img src="image/forside/sponsor/aarhuskom.webp" alt="aarhus-spons">
         </article>
-
     </main>
 
     <footer>
