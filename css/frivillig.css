@@ -1,5 +1,49 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
+}
+
+/* Styling for overskrifter */
+h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2.5rem;
+    color: #5e4795;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    color: #5e4795;
+    margin-top: 20px;
+}
+
+/* Styling af tekstafsnit */
+p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+/* Styling for billeder */
+.billede-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.billede-container img {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    max-height: 180;
+}
+
+.billede-container img:hover {
+    transform: scale(1.05); /* Forstør billede ved hover */
 }
