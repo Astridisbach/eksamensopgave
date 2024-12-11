@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -41,6 +41,8 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: cover;
     transition: transform 0.3s ease;
+    transform: rotate(90deg);
+    max-height: 180;
 }
 
 .billede-container img:hover {
