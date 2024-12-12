@@ -43,27 +43,32 @@ p {
     height: 10px;
 }
 
-/* Styling for billeder */
-.billede-container1, .billede-container2 {
+/* Styling af billeder */
+.billede-container1,
+.billede-container2 {
     display: flex;
-    justify-content: center; /* Centrerer billederne vandret */
-    align-items: center; /* Centrerer billederne lodret */
-    margin: 20px auto; /* Tilføjer mellemrum rundt om billederne */
-    max-width: 90%; /* Sørger for billederne ikke er for brede */
-    overflow: hidden; /* Beskærer indhold, der går uden for containeren */
-    border-radius: 15px; /* Giver billederne afrundede hjørner */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføjer en skygge for en flot effekt */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin: 20px 0; 
 }
 
-/* Styling for billeder inde i containerne */
-.billede-container1 img, .billede-container2 img {
-    width: 100%; /* Sørger for billederne passer til containeren */
+.billede-container1 img,
+.billede-container2 img {
+    max-width: 100%; /* Sørger for, at billedet ikke bliver større end containeren */
     height: auto; /* Bevarer billedets proportioner */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Tilføjer en animation ved hover */
+    border-radius: 8px; /* Tilføjer afrundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge for dybde */
+    transition: transform 0.3s ease; /* Gør billedet interaktivt ved hover */
 }
 
-/* Hover-effekt for billeder */
-.billede-container1 img:hover, .billede-container2 img:hover {
-    transform: scale(1.05); /* Gør billedet større ved hover */
+.billede-container1 img:hover,
+.billede-container2 img:hover {
+    transform: scale(1.005); /* Gør billedet større ved hover */
     opacity: 0.9; /* Giver billedet en svag gennemsigtighed ved hover */
+}
+
+/* Specifik justering til bredere billeder i container 2 */
+.billede-container2 img {
+    width: 45%; /* Justerer bredden af billeder i container 2 */
 }
