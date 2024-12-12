@@ -45,5 +45,15 @@ p {
 }
 
 .billede-container img:hover {
-    transform: scale(1.05); /* Forstør billede ved hover */
+    transform: scale(1.005); /* Forstør billede ved hover */
+}
+
+/* Styling for punkter i lister */
+ul {
+    list-style-type: disc;
+    margin-left: 60px;
+}
+
+li {
+    margin-bottom: 10px;
 }
