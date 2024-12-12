@@ -18,6 +18,7 @@ h3 {
     text-align: left;
     color: #5e4795;
     margin-top: 20px;
+    padding: 0 20px;
 }
 
 /* Styling af tekstafsnit */
@@ -26,6 +27,15 @@ p {
     line-height: 1.7;
     margin: 15px 0;
     padding: 0 20px;
+}
+
+.highlight {
+    color: white;
+}
+
+.italic {
+    font-style: italic;
+    padding: 0px;
 }
 
 /* Styling for billeder */
@@ -41,8 +51,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: cover;
     transition: transform 0.3s ease;
-    transform: rotate(90deg);
-    max-height: 180;
+    max-height: 500px;
 }
 
 .billede-container img:hover {
