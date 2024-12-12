@@ -3,3 +3,67 @@
     padding: 5px;
     box-sizing: border-box;
 }
+
+/* Styling for overskrifter */
+h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2.5rem;
+    color: #5e4795;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    color: #5e4795;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Styling af tekstafsnit */
+p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: white;
+}
+
+.italic {
+    font-style: italic;
+    padding: 20px;
+}
+
+.line-spacing {
+    display: block;
+    height: 10px;
+}
+
+/* Styling for billeder */
+.billede-container1, .billede-container2 {
+    display: flex;
+    justify-content: center; /* Centrerer billederne vandret */
+    align-items: center; /* Centrerer billederne lodret */
+    margin: 20px auto; /* Tilføjer mellemrum rundt om billederne */
+    max-width: 90%; /* Sørger for billederne ikke er for brede */
+    overflow: hidden; /* Beskærer indhold, der går uden for containeren */
+    border-radius: 15px; /* Giver billederne afrundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføjer en skygge for en flot effekt */
+}
+
+/* Styling for billeder inde i containerne */
+.billede-container1 img, .billede-container2 img {
+    width: 100%; /* Sørger for billederne passer til containeren */
+    height: auto; /* Bevarer billedets proportioner */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Tilføjer en animation ved hover */
+}
+
+/* Hover-effekt for billeder */
+.billede-container1 img:hover, .billede-container2 img:hover {
+    transform: scale(1.05); /* Gør billedet større ved hover */
+    opacity: 0.9; /* Giver billedet en svag gennemsigtighed ved hover */
+}

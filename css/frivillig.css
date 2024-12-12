@@ -38,6 +38,11 @@ p {
     padding: 0px;
 }
 
+.line-spacing {
+    display: block;
+    height: 10px;
+}
+
 /* Styling for billeder */
 .billede-container {
     display: flex;
