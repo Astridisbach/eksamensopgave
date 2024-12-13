@@ -1,13 +1,46 @@
 * {
     margin: 0;
-    padding: 5px;
+    padding: 0px;
     box-sizing: border-box;
+}
+
+/* GENERELLE STILINDSTILLINGER */
+body {
+    font-family: 'Jockey One', sans-serif;
+    background: linear-gradient(to bottom, #a9b4df, #848484 ,#6c6c6c);
+    color: #5e4795;
+    margin: 0;
+    padding: 0;
 }
 
 /* STYLE FOR HOVEDINDHOLD */
 main {
-    padding: 40px;
+    padding: 0px;
     text-align: center;
+}
+
+/* STIL FOR LOGO */
+.logo-container {
+    text-align: right;
+    padding: 20px;
+    position: right;
+}
+
+.logo-img {
+    width: 10%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.logo-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-height: 100px;
+}
+
+.banner-img {
+    width: 60%;
 }
 
 /* STYLE AF BILLEDET UNDER NAVBAR */
@@ -24,35 +57,30 @@ main {
     max-width: 100%;
   }
 
-/* SØGEFORM */
-.search-form {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-input {
-    padding: 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  .search-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    padding-left: 5px;
-  }
-  
-  .search-button:hover {
-    color: #ddd;
-  }
 
 /* KONCERT-OVERSIGT */
 .billet-køb {
     margin-top: 30px;
+    width: 30%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute;
+    background-color: #a9b4df;
+    padding: 3rem 0rem;
+    border-radius: 8px;
+    margin: -260px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.anne-roem {
+    width: 100%;
+    height: auto;
+}
+
+.anne-roem img {
+    width: 100%;
 }
 
 .buy-ticket {
@@ -63,6 +91,8 @@ main {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    margin: 1rem;
+    font-size: 1.9rem;
 }
 
 .buy-ticket:hover {
@@ -70,9 +100,34 @@ main {
 }
 
 .next-event {
-    margin-top: 40px;
-    font-size: 24px;
+    font-size: 1.7rem;
     font-weight: bold;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.event-liste {
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2rem;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.event-name {
+    display: flex;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.se-alle-tider {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 /* ARTIKLER OG KAMPAGNER */
@@ -166,4 +221,29 @@ form button:hover {
     max-width: 90%;
     height: 90px;
     margin: 0;
+}
+
+/* MOBIL */ 
+@media (max-width: 600px) {
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anne-roem {
+        position: relative;
+    }
+
+    .billet-køb {
+        margin: 0;
+    }
+
+
+}
+
+/* TABLET */ 
+@media (min-width: 601px) and (max-width: 991px) {
 }

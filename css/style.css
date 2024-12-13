@@ -38,6 +38,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    display: none;
 }
 
 .search-input {
@@ -55,10 +56,16 @@ body {
     cursor: pointer;
 }
 
+header {
+    display: flex;
+}
+
+
 /* NAVBAR STIL */
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbar ul {
@@ -83,6 +90,18 @@ body {
     color: #3d3570;
 }
 
+.navbar img {
+    width: 100px;
+}
+
+#menu-bar {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
 /* STYLE FOR DROPDOWN MENUPUNKTER */
 .navbar li ul {
     display: none;
@@ -99,19 +118,57 @@ body {
 
 /* FOOTER */
 footer {
-    background-color: #313131;
+    background-color: #313131; /* Gør baggrunden sort */
     padding: 40px 20px;
     color: white;
+    font-family: 'Jockey One', sans-serif; /* Optional - justerer fonten */
 }
 
+/* FOOTER-CONTAINER */
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    float: right;
+    justify-content: space-between; /* Fordeler pladsen mellem venstre og højre */
+    align-items: flex-start; /* Justerer elementerne til toppen */
+    flex-wrap: wrap; /* Sørger for at elementer kan gå til næste række på små skærme */
+    gap: 20px; /* Mellemrum mellem elementerne */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Skubber elementerne til hver sin side */
+    align-items: flex-start; /* Justerer elementerne langs toppen */
+    background-color: #313131; /* Sort baggrund */
+    padding: 20px; /* Giver luft omkring indholdet */
+    color: white; /* Hvid tekst */
+}
+
+.footer-kontakt,
+.footer-andet {
+    flex: 1; /* Sørger for fleksibel tilpasning */
+}
+
+.footer-kontakt {
+    text-align: left;
+}
+
+.footer-andet {
+    text-align: right; 
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #5e4795; 
 }
 
 .socials {
     display: flex;
+    gap: 15px; /* Mellemrum mellem social media ikoner */
+    justify-content: flex-end; /* Placerer ikonerne til højre */
+    flex: 1 1 300px; /* Gør den fleksibel, så den kan tilpasse sig */
 }
 
 .footer-icon {
@@ -124,8 +181,8 @@ footer {
 }
 
 .kontakt, .andet {
-    text-align: left;
-    float: left;
+    text-align: left; /* Venstrestillet tekst */
+    flex: 1 1 300px; /* Sørger for at disse sektioner kan tilpasse sig */
 }
 
 footer a {
@@ -139,6 +196,45 @@ footer a:hover {
 
 footer span {
     display: block;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) { /* Tablet og mindre skærme */
+    .footer-container {
+        flex-direction: column; /* Arrangerer elementer lodret på små skærme */
+        align-items: center; /* Centrerer elementerne */
+    }
+
+    .socials {
+        justify-content: center; /* Centrerer de sociale ikoner på små skærme */
+        margin-bottom: 20px; /* Lægger lidt afstand til de andre sektioner */
+    }
+
+    .footerlogo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .kontakt, .andet {
+        text-align: center; /* Centrerer tekst og links på små skærme */
+        flex: 1 1 100%; /* Sørger for, at de tager hele bredden */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobilskærme */
+    footer {
+        padding: 30px 15px; /* Justerer padding på mobile enheder */
+    }
+
+    .footerlogo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .kontakt, .andet {
+        text-align: center; /* Centrerer teksten på små skærme */
+    }
 }
 
 /* MOBIL */ 

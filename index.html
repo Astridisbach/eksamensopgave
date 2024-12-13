@@ -22,10 +22,6 @@
 </head>
 
 <body>
-    <!-- INDPAKNING AF LOGO -->
-    <a href="index.html">
-        <img src="image/navbar/radar.logo.webp" alt="Radar-logo-img">
-    </a>
     
     <!-- GØR DET MULIGT AT SØGE PÅ HJEMMESIDEN -->
     <form class="search-form" action="#" method="GET">
@@ -35,6 +31,10 @@
     </article>
 
     <header> 
+        <section class="banner-img">
+            <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a>
+        </section>
+
         <input type="checkbox" id="menu-bar"> <!-- KONTROLLERER OM MENUEN ER ÅBEN -->
         <label for="menu-bar">Menu</label> <!-- FOR AT VISE MENUPUNKTER -->
 
@@ -74,12 +74,11 @@
                 </li>
            
             </ul>
+                        <!-- INDPAKNING AF LOGO -->
+            <a href="index.html">
+                <img src="image/navbar/radar.logo.webp" alt="Radar-logo-img">
+            </a>
         </nav> <!-- NAVBAR SLUT -->
-        
-        <section class="banner-img">
-            <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a>
-        </section>
-    
     </header>
 
     <main>
@@ -93,7 +92,7 @@
             <h2 class="next-event">NÆSTE BEGIVENHED</h2>
             
             <article class="anne-roem">
-                <p class="event-name">29/01 ANNA ROEMER</p>
+                <h3 class="event-name">29/01 ANNA ROEMER</h3>
                 <img src="image/forside/annaroemer.webp" alt="Anna Roemer"/>
             </article>
     
@@ -155,6 +154,28 @@
     </main>
 
     <footer>
+            <!-- OVERSIGT OVER KONTAKTMULIGHEDER SAMT ADRESSE -->
+        <article class="footer-kontakt">
+            <article class="kontakt">
+                <a href="https://maps.app.goo.gl/uQbbWJaSaAvCWsMn6">
+                Karen Wegeners Gade 6<br>
+                DK 8000 Aarhus C
+                </a>
+                <br>
+                Telefon <a href="tel:+4586760344">+45 8676 0344</a><br>
+                Kontakt: <a href="mailto:kontakt@radarlive.dk">kontakt@radarlive.dk</a><br>
+                Bookingforespørgsler: <a href="mailto:booking@radarlive.dk">booking@radarlive.dk</a>
+            </article>
+        </article>
+        
+        <article class="footer-andet">
+            <article class="andet">
+                <a href="index.html" class="nyhedsbrev">NYHEDSBREV </a>
+                <a href="index.html" class="vilkår og betingelser">VILKÅR & BETINGELSER</a>
+                <a href="index.html" class="FAQ">FAQ</a> 
+            </article>
+        </article>
+
         <!-- OVERSIGT OVER SOCIALE MEDIER -->
         <article class="footer-container">
             <article class="socials">
@@ -168,25 +189,6 @@
                 <span class="footer-icon"><a href="https://www.youtube.com/user/radarliverec">
                     <img src="image/footer/youtube.icon.webp" alt="Youtube logo" class="footerlogo" aria-label="Gå til Youtube"></a></span>
             </article>
-            
-            <!-- OVERSIGT OVER KONTAKTMULIGHEDER SAMT ADRESSE -->
-            <article class="kontakt">
-                <a href="https://maps.app.goo.gl/uQbbWJaSaAvCWsMn6">
-                    Karen Wegeners Gade 6<br>
-                    DK 8000 Aarhus C
-                </a>
-                <br>
-                Telefon <a href="tel:+4586760344">+45 8676 0344</a><br>
-                Kontakt: <a href="mailto:kontakt@radarlive.dk">kontakt@radarlive.dk</a><br>
-                Bookingforespørgsler: <a href="mailto:booking@radarlive.dk">booking@radarlive.dk</a>
-            </article>
-            
-            <article class="andet">
-                <a href="index.html" class="nyhedsbrev">NYHEDSBREV </a>
-                <a href="index.html" class="vilkår og betingelser">VILKÅR & BETINGELSER</a>
-                <a href="index.html" class="FAQ">FAQ</a> 
-            </article>
-            
         </article>
     </footer>
 </body>
