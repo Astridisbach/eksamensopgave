@@ -37,7 +37,9 @@ p {
 
 .italic {
     font-style: italic;
-    padding: 20px;
+    padding: 35px;
+    text-decoration: none;
+    color: #594891;
 }
 
 .line-spacing {
@@ -57,7 +59,7 @@ p {
 
 .billede-container1 img,
 .billede-container2 img {
-    max-width: 100%; /* Sørger for, at billedet ikke bliver større end containeren */
+    max-width: 90%; /* Sørger for, at billedet ikke bliver større end containeren */
     height: auto; /* Bevarer billedets proportioner */
     border-radius: 8px; /* Tilføjer afrundede hjørner */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge for dybde */

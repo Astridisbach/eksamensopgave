@@ -62,13 +62,13 @@ main {
 .billet-køb {
     margin-top: 30px;
     width: 30%;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
     position: absolute;
     background-color: #a9b4df;
     padding: 3rem 0rem;
     border-radius: 8px;
-    margin: -260px 0 0 50px;
+    margin: -10rem 0 0 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -133,16 +133,21 @@ main {
 /* ARTIKLER OG KAMPAGNER */
 .femy-quote {
     margin-top: 40px;
+    margin-left: 36%;
 }
 
 .femy-quote img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    margin-top: 0.5rem;
+    margin-right: -0.6rem;
+    border-radius: 8px;
 }
 
 .femy-quote h2 {
     font-size: 24px;
     margin-top: 20px;
+    color: white;
 }
 
 .femy-interview {
@@ -223,10 +228,14 @@ form button:hover {
     margin: 0;
 }
 
+@media (max-width: 1030px) {
+    .event-liste {
+        font-size: 1.3rem;
+    }
+}
+
 /* MOBIL */ 
 @media (max-width: 600px) {
-
-
     main {
         display: flex;
         flex-direction: column;
@@ -240,7 +249,6 @@ form button:hover {
     .billet-køb {
         margin: 0;
     }
-
 
 }
 
