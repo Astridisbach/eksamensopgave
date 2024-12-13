@@ -13,6 +13,10 @@ body {
     padding: 0;
 }
 
+.highlight {
+    color: white;
+}
+
 /* STYLE FOR HOVEDINDHOLD */
 main {
     padding: 0px;
@@ -159,25 +163,97 @@ main {
     color: #3d3570;
 }
 
-/* KAMPAGNER-FORSIDE */
-.kampagner-forside {
+/* KAMPAGNER FORSIDE */
+.alle-kampagner {
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+    overflow: hidden;
+    margin-top: 12rem;
+    padding: 2.5rem;
+    gap: 15%;
 }
 
-.kampagner-forside article {
-    text-align: center;
+.kampagne1-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 2rem;
+    justify-content: space-between;
 }
 
-.kampagner-forside img {
+.kampagne1-2 article {
+    border-radius: 8px;
+    height: 16rem;
+}
+
+.kampagne3 {
+    display: flex;
+    width: 25%;
+    background-color: #a9b4df;
+    border-radius: 8px;
+}
+
+.kampagne-billede1 {
+    width: 60%;
+    height: 16rem;
+    border-radius: 8px;
+}
+
+.kampagne-billede2 {
+    width: 60%;
+    height: 16rem;
+    border-radius: 8px;
+}
+
+.kampagne-billede3 {
     width: 100%;
-    max-width: 300px;
-    object-fit: cover;
+    border-radius: 8px;
 }
 
-.kampagner-forside h3 {
-    margin-top: 20px;
+.frivillig-tilmelding {
+    display: flex;
+    background-color: #a9b4df;
+}
+
+.frivillig-tilmelding article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.donation {
+    display: flex;
+    background-color: #a9b4df;
+    border-radius: 8px;
+}
+
+.donation article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.medie-kampagne article {
+    padding: 0.7rem;
+}
+
+.kampagne-tekst1 {
+    font-size: 1.4rem;
+}
+
+.kampagne-button {
+    background-color: #594891;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.1rem 2.8rem;
+    margin-top: 1.3rem;
+    font-family: 'Jockey One', sans-serif;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }
 
 /* NYHEDSBREV */
@@ -254,4 +330,8 @@ form button:hover {
 
 /* TABLET */ 
 @media (min-width: 601px) and (max-width: 991px) {
+
+    .billet-køb {
+        
+    }
 }
