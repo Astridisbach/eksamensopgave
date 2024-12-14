@@ -292,14 +292,19 @@ form button:hover {
     background-color: #3d3570;
 }
 
+.email-submit {
+    padding: 1.6rem;
+}
+
 /* SPONSOR-OVERSIGT */
 .sponsor-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    gap: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.6rem;
 }
 
 .sponsor-container img {

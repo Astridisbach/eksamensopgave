@@ -127,10 +127,6 @@ footer {
 /* FOOTER-CONTAINER */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Fordeler pladsen mellem venstre og højre */
-    align-items: flex-start; /* Justerer elementerne til toppen */
-    flex-wrap: wrap; /* Sørger for at elementer kan gå til næste række på små skærme */
-    gap: 20px; /* Mellemrum mellem elementerne */
 }
 
 footer {
@@ -149,10 +145,7 @@ footer {
 
 .footer-kontakt {
     text-align: left;
-}
-
-.footer-andet {
-    text-align: right; 
+    margin-right: -12.1rem;
 }
 
 footer a {
@@ -166,9 +159,10 @@ footer a:hover {
 
 .socials {
     display: flex;
-    gap: 15px; /* Mellemrum mellem social media ikoner */
-    justify-content: flex-end; /* Placerer ikonerne til højre */
-    flex: 1 1 300px; /* Gør den fleksibel, så den kan tilpasse sig */
+    gap: 1rem;
+    flex: 1rem;
+    flex-direction: row;
+    margin-top: 5.5rem;
 }
 
 .footer-icon {
@@ -196,6 +190,27 @@ footer a:hover {
 
 footer span {
     display: block;
+}
+
+.nyhedsbrev {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.vilkaar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.faq {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: flex-start;
 }
 
 /* RESPONSIVE DESIGN */
