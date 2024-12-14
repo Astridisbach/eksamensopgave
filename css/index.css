@@ -258,13 +258,17 @@ main {
 
 /* NYHEDSBREV */
 .nyhedsbrev-container {
-    background-color: #f9f9f9;
-    padding: 40px;
-    margin-top: 40px;
+    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
+    padding: 2rem;
+    margin-top: 2rem;
 }
 
 .nyhedsbrev-tekst h2 {
-    font-size: 24px;
+    font-size:2rem;
+}
+
+.nyhedsbrev-tekst p {
+    font-size: 1.5rem;
 }
 
 form input[type="email"] {
@@ -331,7 +335,4 @@ form button:hover {
 /* TABLET */ 
 @media (min-width: 601px) and (max-width: 991px) {
 
-    .billet-køb {
-        
-    }
 }
