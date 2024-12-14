@@ -116,7 +116,8 @@ label {
     display: block;
 }
 
-/* FOOTER */
+
+/* FOOTER */ 
 footer {
     background-color: #313131; /* Gør baggrunden sort */
     padding: 40px 20px;
@@ -138,14 +139,14 @@ footer {
     color: white; /* Hvid tekst */
 }
 
-.footer-kontakt,
 .footer-andet {
     flex: 1; /* Sørger for fleksibel tilpasning */
+    margin-right: -13rem;
 }
 
 .footer-kontakt {
     text-align: left;
-    margin-right: -12.1rem;
+    flex: 1;
 }
 
 footer a {
@@ -163,6 +164,7 @@ footer a:hover {
     flex: 1rem;
     flex-direction: row;
     margin-top: 5.5rem;
+    margin-left: 1rem;
 }
 
 .footer-icon {
@@ -190,8 +192,10 @@ footer a:hover {
 
 footer span {
     display: block;
-}
+} 
 
+
+/* NYHEDSBREV SEKTION */
 .nyhedsbrev {
     display: flex;
     flex-direction: row-reverse;
@@ -214,7 +218,8 @@ footer span {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) { /* Tablet og mindre skærme */
+ /* Tablet */
+@media (min-width: 601px) and (max-width: 991px) {
     .footer-container {
         flex-direction: column; /* Arrangerer elementer lodret på små skærme */
         align-items: center; /* Centrerer elementerne */
@@ -237,7 +242,8 @@ footer span {
     }
 }
 
-@media (max-width: 480px) { /* Mobilskærme */
+/* Mobilskærme */
+@media (max-width: 600px) { 
     footer {
         padding: 30px 15px; /* Justerer padding på mobile enheder */
     }
@@ -252,10 +258,3 @@ footer span {
     }
 }
 
-/* MOBIL */ 
-@media (max-width: 600px) {
-}
-
-/* TABLET */ 
-@media (min-width: 601px) and (max-width: 991px) {
-}
