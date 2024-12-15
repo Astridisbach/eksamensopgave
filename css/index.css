@@ -313,6 +313,7 @@ form button:hover {
     margin: 0;
 }
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 1030px) {
     .event-liste {
         font-size: 1.3rem;
@@ -335,9 +336,601 @@ form button:hover {
         margin: 0;
     }
 
+/* STYLE FOR HOVEDINDHOLD */
+main {
+    padding: 0px;
+    text-align: center;
 }
+
+/* STIL FOR LOGO */
+.logo-container {
+    text-align: right;
+    padding: 20px;
+    position: right;
+}
+
+.logo-img {
+    width: 10%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.logo-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-height: 100px;
+}
+
+.banner-img {
+    width: 60%;
+}
+
+/* STYLE AF BILLEDET UNDER NAVBAR */
+.image {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+
+/* KONCERT-OVERSIGT */
+.billet-køb {
+    margin-top: 30px;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-color: #a9b4df;
+    padding: 3rem 0rem;
+    border-radius: 8px;
+    margin: -10rem 0 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.anne-roem {
+    width: 100%;
+    height: auto;
+}
+
+.anne-roem img {
+    width: 100%;
+}
+
+.buy-ticket {
+    display: inline-block;
+    background-color: #5e4795;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 1.9rem;
+}
+
+.buy-ticket:hover {
+    background-color: #3d3570;
+}
+
+.next-event {
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.event-liste {
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2rem;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.event-name {
+    display: flex;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.se-alle-tider {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* ARTIKLER OG KAMPAGNER */
+.femy-quote {
+    margin-top: 40px;
+    margin-left: 36%;
+}
+
+.femy-quote img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-right: -0.6rem;
+    border-radius: 8px;
+}
+
+.femy-quote h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+}
+
+.femy-interview {
+    color: #5e4795;
+    text-decoration: none;
+}
+
+.femy-interview:hover {
+    color: #3d3570;
+}
+
+/* KAMPAGNER FORSIDE */
+.alle-kampagner {
+    display: flex;
+    overflow: hidden;
+    margin-top: 12rem;
+    padding: 2.5rem;
+    gap: 15%;
+}
+
+.kampagne1-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.kampagne1-2 article {
+    border-radius: 8px;
+    height: 16rem;
+}
+
+.kampagne3 {
+    display: flex;
+    width: 25%;
+    background-color: #a9b4df;
+    border-radius: 8px;
+}
+
+.kampagne-billede1 {
+    width: 60%;
+    height: 16rem;
+    border-radius: 8px;
+}
+
+.kampagne-billede2 {
+    width: 60%;
+    height: 16rem;
+    border-radius: 8px;
+}
+
+.kampagne-billede3 {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.frivillig-tilmelding {
+    display: flex;
+    background-color: #a9b4df;
+}
+
+.frivillig-tilmelding article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.donation {
+    display: flex;
+    background-color: #a9b4df;
+    border-radius: 8px;
+}
+
+.donation article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.medie-kampagne article {
+    padding: 0.7rem;
+}
+
+.kampagne-tekst1 {
+    font-size: 1.4rem;
+}
+
+.kampagne-button {
+    background-color: #594891;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.1rem 2.8rem;
+    margin-top: 1.3rem;
+    font-family: 'Jockey One', sans-serif;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* NYHEDSBREV */
+.nyhedsbrev-container {
+    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.nyhedsbrev-tekst h2 {
+    font-size:2rem;
+}
+
+.nyhedsbrev-tekst p {
+    font-size: 1.5rem;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5e4795;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #5e4795;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3d3570;
+}
+
+.email-submit {
+    padding: 1.6rem;
+}
+
+/* SPONSOR-OVERSIGT */
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.6rem;
+}
+
+.sponsor-container img {
+    max-width: 90%;
+    height: 90px;
+    margin: 0;
+}
+    }
 
 /* TABLET */ 
 @media (min-width: 601px) and (max-width: 991px) {
+
+/* STYLE FOR HOVEDINDHOLD */
+main {
+    padding: 0px;
+    text-align: center;
+}
+
+/* STIL FOR LOGO */
+.logo-container {
+    text-align: right;
+    padding: 20px;
+    position: right;
+}
+
+.logo-img {
+    width: 10%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.logo-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-height: 100px;
+}
+
+.banner-img {
+    width: 60%;
+}
+
+/* STYLE AF BILLEDET UNDER NAVBAR */
+.image {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+
+/* KONCERT-OVERSIGT */
+.billet-køb {
+    margin-top: 30px;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-color: #a9b4df;
+    padding: 3rem 0rem;
+    border-radius: 8px;
+    margin: -10rem 0 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.anne-roem {
+    width: 100%;
+    height: auto;
+}
+
+.anne-roem img {
+    width: 100%;
+}
+
+.buy-ticket {
+    display: inline-block;
+    background-color: #5e4795;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 1.9rem;
+}
+
+.buy-ticket:hover {
+    background-color: #3d3570;
+}
+
+.next-event {
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.event-liste {
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2rem;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.event-name {
+    display: flex;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.se-alle-tider {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* ARTIKLER OG KAMPAGNER */
+.femy-quote {
+    margin-top: 40px;
+    margin-left: 36%;
+}
+
+.femy-quote img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-right: -0.6rem;
+    border-radius: 8px;
+}
+
+.femy-quote h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+}
+
+.femy-interview {
+    color: #5e4795;
+    text-decoration: none;
+}
+
+.femy-interview:hover {
+    color: #3d3570;
+}
+
+/* KAMPAGNER FORSIDE */
+.alle-kampagner {
+    display: flex;
+    overflow: hidden;
+    margin-top: 12rem;
+    padding: 2.5rem;
+    gap: 15%;
+}
+
+.kampagne1-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.kampagne1-2 article {
+    border-radius: 8px;
+    height: 16rem;
+}
+
+.kampagne3 {
+    display: flex;
+    width: 25%;
+    background-color: #a9b4df;
+    border-radius: 8px;
+}
+
+.kampagne-billede1 {
+    width: 60%;
+    height: 16rem;
+    border-radius: 8px;
+}
+
+.kampagne-billede2 {
+    width: 60%;
+    height: 16rem;
+    border-radius: 8px;
+}
+
+.kampagne-billede3 {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.frivillig-tilmelding {
+    display: flex;
+    background-color: #a9b4df;
+}
+
+.frivillig-tilmelding article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.donation {
+    display: flex;
+    background-color: #a9b4df;
+    border-radius: 8px;
+}
+
+.donation article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.medie-kampagne article {
+    padding: 0.7rem;
+}
+
+.kampagne-tekst1 {
+    font-size: 1.4rem;
+}
+
+.kampagne-button {
+    background-color: #594891;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.1rem 2.8rem;
+    margin-top: 1.3rem;
+    font-family: 'Jockey One', sans-serif;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* NYHEDSBREV */
+.nyhedsbrev-container {
+    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.nyhedsbrev-tekst h2 {
+    font-size:2rem;
+}
+
+.nyhedsbrev-tekst p {
+    font-size: 1.5rem;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5e4795;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #5e4795;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3d3570;
+}
+
+.email-submit {
+    padding: 1.6rem;
+}
+
+/* SPONSOR-OVERSIGT */
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.6rem;
+}
+
+.sponsor-container img {
+    max-width: 90%;
+    height: 90px;
+    margin: 0;
+}
+
 
 }
