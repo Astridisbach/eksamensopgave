@@ -1,78 +1,78 @@
 * {
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
+    margin: 0; /* Fjerner standard margin */
+    padding: 5px; /* Sætter standard padding */
+    box-sizing: border-box; /* Inkluderer padding og border i elementets totalbredde og -højde */
 }
 
 /* Styling for overskrifter */
 h1 {
-    font-family: 'Jockey One', sans-serif;
-    font-size: 2.5rem;
-    color: #5e4795;
-    text-align: center;
+    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen Jockey One til h1 */
+    font-size: 2.5rem; /* Sætter skriftstørrelsen for h1 */
+    color: #5e4795; /* Laver farven til en lilla tone */
+    text-align: center; /* Centrerer teksten */
 }
 
 h3 {
-    font-family: 'Jockey One', sans-serif;
-    font-size: 1.8rem;
-    text-align: left;
-    color: #5e4795;
-    margin-top: 20px;
-    padding: 40px;
+    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen Jockey One til h3 */
+    font-size: 1.8rem; /* Sætter skriftstørrelsen for h3 */
+    text-align: left; /* Venstrestiller teksten */
+    color: #5e4795; /* Laver farven til en lilla tone */
+    margin-top: 20px; /* Giver afstand øverst */
+    padding: 40px; /* Lægger polstring omkring h3 */
 }
 
 /* Styling af tekstafsnit */
 p {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    padding: 0 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
+    font-size: 1.3rem; /* Sætter skriftstørrelsen for paragraf */
+    line-height: 1.7; /* Øger linjeafstand */
+    padding: 0 20px; /* Lægger polstring på venstre og højre */
+    margin-left: 20px; /* Lægger margin på venstre side */
+    margin-right: 20px; /* Lægger margin på højre side */
+    text-align: justify; /* Justerer teksten */
 }
 
 .highlight {
-    color: white;
+    color: white; /* Gør teksten hvid */
 }
 
 .italic {
-    font-style: italic;
-    padding: 0px;
+    font-style: italic; /* Gør teksten kursiv */
+    padding: 0px; /* Fjerner polstring */
 }
 
 .line-spacing {
-    display: block;
-    height: 10px;
+    display: block; /* Gør linjeafstand til et blokelement */
+    height: 10px; /* Sætter højden på linjeafstanden */
 }
 
 /* Styling for billeder */
 .billede-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    overflow: hidden;
+    display: flex; /* Bruger flexbox til billede container */
+    justify-content: space-between; /* Lægger billederne med mellemrum */
+    margin: 20px 0; /* Lægger afstand ovenfor og nedenfor */
+    overflow: hidden; /* Skjuler eventuelle overskydende billeder */
 }
 
 .billede-container img {
-    width: 48%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    max-height: 500px;
+    width: 48%; /* Gør billederne 48% af containerens bredde */
+    border-radius: 8px; /* Rundede hjørner på billederne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge omkring billederne */
+    object-fit: cover; /* Sørger for at billedet fylder sin container uden at ændre proportionerne */
+    transition: transform 0.3s ease; /* Tilføjer en overgang for transformering */
+    max-height: 500px; /* Begrænser højden på billederne */
 }
 
 .billede-container img:hover {
-    transform: scale(1.005); /* Gør billedet større ved hover */
-    opacity: 0.9; /* Giver billedet en svag gennemsigtighed ved hover */
+    transform: scale(1.005); /* Gør billedet en smule større ved hover */
+    opacity: 0.9; /* Ændrer billedets opacitet ved hover */
 }
 
 /* Styling for punkter i lister */
 ul {
-    list-style-type: disc;
-    margin-left: 60px;
+    list-style-type: disc; /* Bruger disk som listepunkt */
+    margin-left: 60px; /* Lægger margin til venstre */
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Lægger margin under hvert listepunkt */
 }
