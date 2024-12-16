@@ -384,15 +384,14 @@ main {
 
 /* KONCERT-OVERSIGT */
 .billet-køb {
-    margin-top: 30px;
     width: 30%;
-    height: 100%;
+    height: 36rem;
     overflow: hidden;
     position: absolute;
     background-color: #a9b4df;
-    padding: 3rem 0rem;
+    padding: 0.1rem 0rem;
     border-radius: 8px;
-    margin: -10rem 0 0 2.5rem;
+    margin: -6rem 0 0 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -620,11 +619,10 @@ form button:hover {
 .sponsor-container {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     padding: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
 }
 
 .sponsor-container img {
@@ -684,15 +682,14 @@ main {
 
 /* KONCERT-OVERSIGT */
 .billet-køb {
-    margin-top: 30px;
     width: 30%;
-    height: 100%;
+    height: 36rem;
     overflow: hidden;
     position: absolute;
     background-color: #a9b4df;
-    padding: 3rem 0rem;
+    padding: 0.1rem 0rem;
     border-radius: 8px;
-    margin: -10rem 0 0 2.5rem;
+    margin: -6rem 0 0 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -920,11 +917,10 @@ form button:hover {
 .sponsor-container {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     padding: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
 }
 
 .sponsor-container img {
