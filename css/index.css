@@ -383,250 +383,284 @@ form button:hover {
 }
 
 /* RESPONSIVE DESIGN */
+
+/* Dette gør teksten i event-liste mindre på skærme med en maksimal bredde på 1030px */
 @media (max-width: 1030px) {
     .event-liste {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Mindsker font-størrelsen i event-liste sektionen */
     }
 }
 
-/* MOBIL */ 
+/* MOBIL: Stilændringer for skærme med en maksimal bredde på 600px (mobiloptimering) */
 @media (max-width: 600px) {
+
+    /* Gør hovedindholdet fleksibelt, så det arrangeres vertikalt */
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    /* Justerer placeringen af billede-sektionen for Anne Roem */
     .anne-roem {
-        position: relative;
+        position: relative; /* Ændrer positionen af sektionen til relativ */
     }
 
+    /* Justerer margin for billet-køb-sektionen på mobil */
     .billet-køb {
-        margin: 0;
+        margin: 0; /* Fjerner marginen for at tilpasse layoutet */
     }
 
-/* STYLE FOR HOVEDINDHOLD */
-main {
-    padding: 0px;
-    text-align: center;
-}
+    /* STYLE FOR HOVEDINDHOLD: fjerner padding og centrerer tekst */
+    main {
+        padding: 0px; /* Fjerner padding */
+        text-align: center; /* Centrerer teksten */
+    }
 
-/* STIL FOR LOGO */
-.logo-container {
-    text-align: right;
-    padding: 20px;
-    position: right;
-}
+    /* STIL FOR LOGO: Justerer logoets container på mobil */
+    .logo-container {
+        text-align: right; /* Justerer logoet til højre */
+        padding: 20px; /* Tilføjer padding omkring logoet */
+        position: right; /* Gør containeren relativ i forhold til siden */
+    }
 
-.logo-img {
-    width: 10%;
-    max-height: 100px;
-    object-fit: cover;
-}
+    /* Justering af logo-billedet */
+    .logo-img {
+        width: 10%; /* Sætter logo-bredden til 10% af containeren */
+        max-height: 100px; /* Maksimal højde af logoet */
+        object-fit: cover; /* Sørger for at billedet dækker containeren uden at blive forvrænget */
+    }
 
-.logo-img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    max-height: 100px;
-}
+    /* Logoet placeres absolut, så det forbliver på samme sted på siden */
+    .logo-img {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        max-height: 100px;
+    }
 
-.banner-img {
-    display: none;
-}
+    /* Bannerbilledet skjules på mobil */
+    .banner-img {
+        display: none;
+    }
 
-/* STYLE AF BILLEDET UNDER NAVBAR */
-.image {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    max-width: 100%;
-  }
+    /* STYLE AF BILLEDET UNDER NAVBAR: Billederne tilpasser sig skærmstørrelsen */
+    .image {
+        width: 100%; /* Billedet fylder 100% af containerens bredde */
+        overflow: hidden; /* Skjuler overflow, hvis billedet er for stort */
+    }
+    
+    .image img {
+        width: 100%; /* Billedet tilpasses containerens bredde */
+        height: auto; /* Bevarer proportionerne */
+        display: block; /* Gør billedet til et blok-element */
+        object-fit: cover; /* Gør, at billedet dækker hele containeren */
+        max-width: 100%; /* Hindrer at billedet bliver større end containeren */
+    }
 
+    /* Første sektion: Justering for responsiv visning */
+    .førstesektion {
+        display: flex;
+        flex-direction: column; /* Arrangerer indholdet vertikalt */
+        align-items: center; /* Centrerer elementerne horisontalt */
+    }
 
-.førstesektion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    /* KONCERT-OVERSIGT: Tilpasning af billet-sektionen til mobil */
+    .billet-køb {
+        width: 66%; /* Gør billetten 66% bred på skærme med mindre bredde */
+        height: 36rem; /* Sætter højde på billet-sektionen */
+        background-color: #a9b4df; /* Baggrundsfarve */
+        padding: 0.1rem 0rem; /* Tilføjer minimal padding */
+        border-radius: 8px; /* Runder hjørnerne */
+        margin: -3rem 0 0 0rem; /* Skubber billetten opad */
+        display: flex; /* Brug flexbox til layout */
+        flex-direction: column; /* Arranger elementerne i en kolonne */
+        justify-content: space-around; /* Fordeler pladsen jævnt i sektionen */
+        position: relative; /* Gør sektionen relativ i forhold til dens position */
+    }
 
-/* KONCERT-OVERSIGT */
-.billet-køb {
-    width: 66%;
-    height: 36rem;
-    background-color: #a9b4df;
-    padding: 0.1rem 0rem;
-    border-radius: 8px;
-    margin: -3rem 0 0 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-}
+    /* Anne Roem billedsektion */
+    .anne-roem {
+        width: 100%; /* Billedet tager 100% af containerens bredde */
+        height: auto; /* Højden justeres automatisk for at bevare proportioner */
+    }
 
-.anne-roem {
-    width: 100%;
-    height: auto;
-}
+    /* Billede i Anne Roem sektionen */
+    .anne-roem img {
+        width: 100%; /* Billedet fylder hele containeren */
+    }
 
-.anne-roem img {
-    width: 100%;
-}
+    /* Knap til at købe billet */
+    .buy-ticket {
+        display: inline-block; /* Gør knappen inline, så den kan tilpasse sig indholdet */
+        background-color: #5e4795; /* Lilla baggrundsfarve */
+        color: white; /* Hvid tekst */
+        padding: 0.9rem 0rem; /* Padding til knappen */
+        text-decoration: none; /* Fjerner underline */
+        font-weight: bold; /* Gør teksten fed */
+        border-radius: 5px; /* Runde hjørner på knappen */
+        margin: 1rem; /* Mellemrum omkring knappen */
+        font-size: 1.4rem; /* Ændrer font-størrelsen */
+    }
 
-.buy-ticket {
-    display: inline-block;
-    background-color: #5e4795;
-    color: white;
-    padding: 0.9rem 0rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 1rem;
-    font-size: 1.4rem;
-}
+    /* Hover-effekt for knappen */
+    .buy-ticket:hover {
+        background-color: #3d3570; /* Skifter baggrundsfarve til mørkere lilla ved hover */
+    }
 
-.buy-ticket:hover {
-    background-color: #3d3570;
-}
+    /* Tekst for næste event */
+    .next-event {
+        font-size: 1.7rem; /* Større skriftstørrelse */
+        font-weight: bold; /* Fed tekst */
+        display: flex; /* Flexbox for at justere layoutet */
+        padding-left: 1rem; /* Lidt plads til venstre */
+    }
 
-.next-event {
-    font-size: 1.7rem;
-    font-weight: bold;
-    display: flex;
-    padding-left: 1rem;
-}
+    /* Eventliste tilpasning */
+    .event-liste {
+        display: flex; /* Flexbox for at arrangere listepunkterne */
+        padding-left: 1rem; /* Lidt plads til venstre */
+        flex-direction: column; /* Arranger eventerne vertikalt */
+        align-items: flex-start; /* Justerer eventerne til venstre */
+        line-height: 2rem; /* Giver lidt ekstra linjeafstand */
+        list-style: none; /* Fjerner punkttegn fra listen */
+        font-size: 1.1rem; /* Sætter font-størrelsen */
+    }
 
-.event-liste {
-    display: flex;
-    padding-left: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 2rem;
-    list-style: none;
-    font-size: 1.1rem;
-}
+    /* Stil for eventnavnet */
+    .event-name {
+        display: flex; /* Flexbox for at arrangere eventnavnene */
+        padding-left: 1rem; /* Lidt plads til venstre */
+        font-size: 1.2rem; /* Større skriftstørrelse */
+    }
 
-.event-name {
-    display: flex;
-    padding-left: 1rem;
-    font-size: 1.2rem;
-}
-
-.se-alle-tider {
-    display: flex;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    font-size: 1.1rem;
-    text-decoration: none;
+    /* Se alle tider link */
+    .se-alle-tider {
+        display: flex; /* Flexbox til at arrangere linket */
+        padding-left: 1rem; /* Lidt plads til venstre */
+        padding-top: 0.5rem; /* Lidt ekstra plads til toppen */
+        font-size: 1.1rem; /* Lidt mindre skriftstørrelse */
+        text-decoration: none; /* Fjerner underline */
+    }
 }
 
 /* ARTIKLER OG KAMPAGNER */
+/* Stil for citat-sektionen i artikler */
 .femy-quote {
-    margin-top: 0;
-    margin-left: 0;
+    margin-top: 0; /* Fjerner top-marginen for at undgå ekstra plads ovenfor */
+    margin-left: 0; /* Fjerner venstre-marginen */
 }
 
+/* Stil for billeder i femy-quote-sektionen */
 .femy-quote img {
-    max-width: 90%;
-    height: auto;
-    margin-top: 4rem;
-    margin-right: -0.6rem;
-    border-radius: 8px;
+    max-width: 90%; /* Sætter den maksimale bredde på billedet til 90% af forælderen */
+    height: auto; /* Bevarer billedets proportioner ved at justere højden automatisk */
+    margin-top: 4rem; /* Tilføjer margin øverst for at give plads over billedet */
+    margin-right: -0.6rem; /* Tilføjer en lille negativ margin til højre for at justere placeringen */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
+/* Stil for overskriften (h2) i femy-quote-sektionen */
 .femy-quote h2 {
-    font-size: 24px;
-    margin-top: 20px;
-    color: white;
+    font-size: 24px; /* Sætter skriftstørrelsen til 24px */
+    margin-top: 20px; /* Tilføjer margin øverst for at give plads mellem overskriften og andre elementer */
+    color: white; /* Sætter farven på overskriften til hvid */
 }
 
+/* Stil for linket i femy-interview-sektionen */
 .femy-interview {
-    color: #5e4795;
-    text-decoration: none;
+    color: #5e4795; /* Sætter tekstfarven til en mørk lilla */
+    text-decoration: none; /* Fjerner understregning fra linket */
 }
 
+/* Stil for linket, når der er hover-effekt */
 .femy-interview:hover {
-    color: #3d3570;
+    color: #3d3570; /* Ændrer linkets farve til en mørkere lilla, når musen er over det */
 }
 
 /* KAMPAGNER FORSIDE */
+
+/* Stil for alle kampagner container */
 .alle-kampagner {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-top: 2rem;
-    padding: 2.5rem;
-    gap: 15%;
+    display: flex; /* Bruger flexbox for at arrangere elementerne horisontalt */
+    flex-direction: column; /* Arrangerer indholdet i en kolonne */
+    overflow: hidden; /* Skjuler indhold, der strækker sig ud over containeren */
+    margin-top: 2rem; /* Tilføjer margin øverst på containeren */
+    padding: 2.5rem; /* Tilføjer padding omkring containeren for at give lidt plads */
+    gap: 15%; /* Skaber et mellemrum på 15% mellem hvert element i containeren */
 }
 
+/* Stil for kampagne-sektioner 1-2 og 3 */
 .kampagne1-2,
 .kampagne3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 2rem;
-    justify-content: space-between;
-    margin-top: 1rem;
+    display: flex; /* Bruger flexbox til at arrangere elementerne */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    width: 100%; /* Sætter bredden til 100% af forælderen */
+    gap: 2rem; /* Tilføjer mellemrum mellem hvert element */
+    justify-content: space-between; /* Fordeler elementerne jævnt med plads imellem dem */
+    margin-top: 1rem; /* Tilføjer margin øverst for at adskille sektionerne */
 }
 
+/* Medie-kampagne sektion */
 .medie-kampagne {
-    display: flex;
-    background-color: #a9b4df;
-    border-radius: 8px;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
+    display: flex; /* Bruger flexbox for at arrangere elementer i horisontal retning */
+    background-color: #a9b4df; /* Sætter baggrundsfarven til en lyseblå-lilla */
+    border-radius: 8px; /* Runder hjørnerne af containeren */
+    align-content: center; /* Centrerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet på tværs af akse (horisontalt) */
+    justify-content: flex-start; /* Justerer indholdet til at starte fra venstre */
 }
 
+/* Artikel-indhold i medie-kampagne sektion */
 .medie-kampagne article {
-    padding: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1.2rem;
+    padding: 0.7rem; /* Tilføjer padding på 0.7rem rundt om indholdet */
+    display: flex; /* Bruger flexbox til at arrangere indholdet i artiklen */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    align-content: center; /* Centrerer indholdet i forhold til containeren */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    margin-left: 1.2rem; /* Tilføjer margin til venstre for at skabe lidt afstand mellem elementerne */
 }
 
+/* Stil for kampagne 1-2 sektion */
 .kampagne1-2 article {
-    border-radius: 8px;
-    height: 16rem;
+    border-radius: 8px; /* Runder hjørnerne af artiklen */
+    height: 16rem; /* Sætter højden på artiklen til 16rem */
 }
 
+/* Stil for første billede i kampagnen */
 .kampagne-billede1 {
-    width: 50%;
-    height: 16rem;
-    border-radius: 8px;
+    width: 50%; /* Sætter bredden til 50% af forælderen */
+    height: 16rem; /* Sætter højden til 16rem */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
+/* Stil for andet billede i kampagnen */
 .kampagne-billede2 {
-    width: 50%;
-    height: 16rem;
-    border-radius: 8px;
+    width: 50%; /* Sætter bredden til 50% af forælderen */
+    height: 16rem; /* Sætter højden til 16rem */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
+/* Stil for tredje billede i kampagnen */
 .kampagne-billede3 {
-    width: 50%;
-    border-radius: 8px;
+    width: 50%; /* Sætter bredden til 50% af forælderen */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
+/* Frivillig tilmelding sektion */
 .frivillig-tilmelding {
-    display: flex;
-    background-color: #a9b4df;
+    display: flex; /* Bruger flexbox til at arrangere elementerne horisontalt */
+    background-color: #a9b4df; /* Sætter baggrundsfarven til en lyseblå-lilla */
 }
 
+/* Artikel-indhold i frivillig tilmelding sektion */
 .frivillig-tilmelding article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    display: flex; /* Bruger flexbox til at arrangere indholdet */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    width: 50%; /* Sætter bredden af artiklen til 50% af forælderen */
 }
 
 /* Donation-sektionen */
@@ -668,115 +702,124 @@ main {
     cursor: pointer; /* Ændrer musemarkøren til en hånd, når man holder musen over knappen */
 }
 
-/* NYHEDSBREV */
+/* NYHEDSBREV - Container for nyhedsbrev */
 .nyhedsbrev-container {
-    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
-    padding: 2rem;
-    margin-top: 2rem;
-    width: 100%;
+    background: linear-gradient(to bottom, #a9b4df, #848484, #a9b4df); /* Opretter en baggrundsfarve med en gradient fra top til bund */
+    padding: 2rem; /* Lægger polstring omkring containeren */
+    margin-top: 2rem; /* Lægger afstand øverst på containeren */
+    width: 100%; /* Gør containeren bred nok til at fylde hele bredden */
 }
 
+/* NYHEDSBREV - Overskrift */
 .nyhedsbrev-tekst h2 {
-    font-size:2rem;
+    font-size: 2rem; /* Sætter skriftstørrelsen for overskriften i nyhedsbrevet */
+}
+
+/* NYHEDSBREV - Tekstindstillinger */
+.nyhedsbrev-tekst h2 {
+    font-size: 2rem; /* Sætter skriftstørrelsen for overskriften i nyhedsbrevet */
 }
 
 .nyhedsbrev-tekst p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Sætter skriftstørrelsen for brødteksten i nyhedsbrevet */
 }
 
+/* Formular inputfelt for email */
 form input[type="email"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #5e4795;
-    font-size: 16px;
-    margin-right: 10px;
+    padding: 10px; /* Lægger polstring omkring inputfeltet */
+    border-radius: 5px; /* Rundede hjørner på inputfeltet */
+    border: 1px solid #5e4795; /* Lægger en kant med farven #5e4795 */
+    font-size: 16px; /* Sætter skriftstørrelsen for teksten i inputfeltet */
+    margin-right: 10px; /* Lægger afstand til højre for inputfeltet */
 }
 
+/* Knap til at sende formularen */
 form button {
-    background-color: #5e4795;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #5e4795; /* Sætter baggrundsfarven på knappen */
+    color: white; /* Sætter tekstfarven på knappen til hvid */
+    padding: 10px 20px; /* Lægger polstring omkring knappen */
+    border: none; /* Fjern kantlinje */
+    border-radius: 5px; /* Rundede hjørner på knappen */
+    cursor: pointer; /* Ændrer musens markør til en hånd, når den er over knappen */
 }
 
+/* Hover-effekt for knappen */
 form button:hover {
-    background-color: #3d3570;
+    background-color: #3d3570; /* Ændrer baggrundsfarven, når musen er over knappen */
 }
 
+/* Klassen for email-submit-knap */
 .email-submit {
-    padding: 1.6rem;
+    padding: 1.6rem; /* Lægger ekstra polstring omkring submit-knappen */
 }
 
 /* SPONSOR-OVERSIGT */
 .sponsor-container {
-    display: flex;
-    justify-content: center;
-    padding: 1.6rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
+    display: flex; /* Gør sponsor-containeren til et flex-container */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    padding: 1.6rem; /* Giver indvendig afstand på 1.6rem omkring containerens indhold */
+    flex-direction: column; /* Lægger indholdet i en kolonne (vertikalt) */
+    align-items: center; /* Centrerer indholdet på tværs af containerens hovedakse */
+    gap: 0px; /* Der er ingen afstand mellem børnene i containeren */
 }
 
 .sponsor-container img {
-    max-width: 90%;
-    height: 90px;
-    margin: 0;
+    max-width: 90%; /* Billedets bredde kan være op til 90% af containerens bredde */
+    height: 90px; /* Billedets højde sættes til 90px */
+    margin: 0; /* Fjern eventuelle marginer omkring billedet */
 }
-    }
 
 /* TABLET */ 
 @media (min-width: 601px) and (max-width: 991px) {
-
-/* STYLE FOR HOVEDINDHOLD */
-main {
-    padding: 0px;
-    text-align: center;
-}
+    /* STYLE FOR HOVEDINDHOLD */
+    main {
+        padding: 0px; /* Fjerner eventuel indvendig afstand fra 'main' containeren */
+        text-align: center; /* Centrerer teksten i 'main' containeren */
+    }
 
 /* STIL FOR LOGO */
 .logo-container {
-    text-align: right;
-    padding: 20px;
-    position: right;
+    text-align: right; /* Teksten og indholdet i logo-containeren bliver justeret til højre */
+    padding: 20px; /* Indvendig afstand på 20px omkring indholdet i containeren */
+    position: right; /* Denne egenskab er dog ugyldig. "right" kan ikke bruges som værdi for position */
 }
 
 .logo-img {
-    width: 10%;
-    max-height: 100px;
-    object-fit: cover;
+    width: 10%; /* Sætter bredden på logoet til 10% af containerens bredde */
+    max-height: 100px; /* Sætter den maksimale højde på logoet til 100px */
+    object-fit: cover; /* Gør, at billedet dækker hele området uden at forvrænge det, beskærer eventuelt billedet */
 }
 
 .logo-img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    max-height: 100px;
+    position: absolute; /* Sætter logoet i en absolut position i forhold til den nærmeste positionerede forælder */
+    top: 20px; /* Afstand fra toppen af containeren */
+    left: 20px; /* Afstand fra venstre side af containeren */
+    max-height: 100px; /* Sætter den maksimale højde på logoet til 100px */
 }
 
 .banner-img {
-    display: none;
+    display: none; /* Skjuler bannerbilledet (det vil ikke blive vist på siden) */
 }
 
 /* STYLE AF BILLEDET UNDER NAVBAR */
 .image {
-    width: 100%;
-    overflow: hidden;
-  }
+    width: 100%; /* Billedets container fylder 100% af bredden på dens forældrecontainer */
+    overflow: hidden; /* Skjuler eventuelt overskydende billede, der ikke passer til containeren */
+}
   
-  .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    max-width: 100%;
-  }
+.image img {
+    width: 100%; /* Gør billedet bredt nok til at fylde hele containeren */
+    height: auto; /* Bevarer billedets proportioner ved at justere højden automatisk */
+    display: block; /* Fjerner eventuel unødvendig afstand under billedet (standard for billeder er inline) */
+    object-fit: cover; /* Billedet tilpasses containeren, mens det dækker hele arealet uden at forvrænge billedet */
+    max-width: 100%; /* Hindrer billedet i at blive større end containerens bredde */
+}
 
-  .førstesektion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Første sektion: Flexbox for responsiv visning */
+.førstesektion {
+    display: flex; /* Brug flexbox til layout */
+    flex-direction: column; /* Arranger elementerne vertikalt i en kolonne */
+    align-items: center; /* Centrerer alle elementer horisontalt inden for containeren */
 }
 
 /* KONCERT-OVERSIGT */
@@ -1048,5 +1091,4 @@ form button:hover {
     height: 90px; /* Sætter højden på billederne til 90px */
     margin: 0; /* Fjerner margin omkring billederne */
 }
-
-    }
+ }
