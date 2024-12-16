@@ -236,7 +236,6 @@ footer {
 /* FOOTER */ 
 footer {
 background-color: #313131; /* Gør baggrunden sort */
-padding: 40px 20px;
 color: white;
 font-family: 'Jockey One', sans-serif; /* Optional - justerer fonten */
 }
@@ -244,7 +243,6 @@ font-family: 'Jockey One', sans-serif; /* Optional - justerer fonten */
 footer {
 display: flex;
 background-color: #313131;
-padding: 0.7rem;
 color: white;
 flex-direction: column;
 text-align: left;

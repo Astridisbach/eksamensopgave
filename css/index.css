@@ -716,7 +716,7 @@ main {
     font-weight: bold;
     border-radius: 5px;
     margin: 1rem;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 .buy-ticket:hover {
@@ -724,7 +724,7 @@ main {
 }
 
 .next-event {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: bold;
     display: flex;
     padding-left: 1rem;
@@ -737,13 +737,13 @@ main {
     align-items: flex-start;
     line-height: 2rem;
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .event-name {
     display: flex;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .se-alle-tider {
