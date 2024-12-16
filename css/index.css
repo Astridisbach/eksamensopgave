@@ -382,19 +382,24 @@ main {
   }
 
 
+.førstesektion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* KONCERT-OVERSIGT */
 .billet-køb {
     width: 30%;
     height: 36rem;
-    overflow: hidden;
-    position: absolute;
     background-color: #a9b4df;
     padding: 0.1rem 0rem;
     border-radius: 8px;
-    margin: -6rem 0 0 2.5rem;
+    margin: -3rem 0 0 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
 }
 
 .anne-roem {
@@ -410,12 +415,12 @@ main {
     display: inline-block;
     background-color: #5e4795;
     color: white;
-    padding: 15px 25px;
+    padding: 0.9rem 0rem;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin: 1rem;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
 }
 
 .buy-ticket:hover {
@@ -436,27 +441,27 @@ main {
     align-items: flex-start;
     line-height: 2rem;
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 0.7rem;
 }
 
 .event-name {
     display: flex;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .se-alle-tider {
     display: flex;
     padding-left: 1rem;
     padding-top: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
 /* ARTIKLER OG KAMPAGNER */
 .femy-quote {
-    margin-top: 40px;
-    margin-left: 36%;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .femy-quote img {
@@ -679,20 +684,24 @@ main {
     max-width: 100%;
   }
 
+  .førstesektion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* KONCERT-OVERSIGT */
 .billet-køb {
     width: 30%;
     height: 36rem;
-    overflow: hidden;
-    position: absolute;
     background-color: #a9b4df;
     padding: 0.1rem 0rem;
     border-radius: 8px;
-    margin: -6rem 0 0 2.5rem;
+    margin: -3rem 0 0 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
 }
 
 .anne-roem {
@@ -708,12 +717,12 @@ main {
     display: inline-block;
     background-color: #5e4795;
     color: white;
-    padding: 15px 25px;
+    padding: 0.9rem 0rem;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .buy-ticket:hover {
@@ -734,27 +743,27 @@ main {
     align-items: flex-start;
     line-height: 2rem;
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
 }
 
 .event-name {
     display: flex;
     padding-left: 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .se-alle-tider {
     display: flex;
     padding-left: 1rem;
     padding-top: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
 /* ARTIKLER OG KAMPAGNER */
 .femy-quote {
-    margin-top: 40px;
-    margin-left: 36%;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .femy-quote img {
