@@ -1,198 +1,229 @@
+/* RESET AF STANDARDSTIL */
 * {
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
+    margin: 0; /* Fjerner margin (afstand) fra alle elementer */
+    padding: 5px; /* Tilføjer en generel padding på 5px for at skabe lidt afstand i alle elementer */
+    box-sizing: border-box; /* Sikrer, at padding og border er inkluderet i elementernes samlede størrelse */
 }
 
 /* GENERELLE STILINDSTILLINGER */
+/* Styling for body-elementet, som gælder for hele siden */
 body {
-    font-family: 'Jockey One', sans-serif;
-    background: linear-gradient(to bottom, #a9b4df, #848484 ,#6c6c6c);
-    color: #5e4795;
-    margin: 0;
-    padding: 0;
+    font-family: 'Jockey One', sans-serif; /* Sætter skrifttypen til 'Jockey One' for hele siden */
+    background: linear-gradient(to bottom, #a9b4df, #848484, #6c6c6c); /* Baggrundsfarve med en lineær gradient fra lys lilla til grå */
+    color: #5e4795; /* Sætter standard tekstfarven til en lilla nuance */
+    margin: 0; /* Fjerner margin fra body-elementet */
+    padding: 0; /* Fjerner padding fra body-elementet */
 }
 
 /* STIL FOR LOGO */
+/* Styling for logo-containeren */
 .logo-container {
-    text-align: right;
-    padding: 20px;
-    position: right;
+    text-align: right; /* Justerer logoet til højre på skærmen */
+    padding: 20px; /* Tilføjer padding på 20px rundt om logo-containeren */
+    position: right; /* Denne regel virker ikke, da 'position' kræver værdier som 'absolute', 'relative', 'fixed' etc. */
 }
 
+/* Logo-billede */
 .logo-img {
-    width: 10%;
-    max-height: 100px;
-    object-fit: cover;
+    width: 10%; /* Indstiller bredden af logoet til 10% af containeren */
+    max-height: 100px; /* Begrænser højden på logoet til 100px */
+    object-fit: cover; /* Sørger for at billedet fylder containeren korrekt uden at blive forvrænget */
 }
 
+/* Positionering af logo */
 .logo-img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    max-height: 100px;
+    position: absolute; /* Placering af logoet i forhold til containeren */
+    top: 20px; /* Placerer logoet 20px fra toppen */
+    left: 20px; /* Placerer logoet 20px fra venstre */
+    max-height: 100px; /* Begrænser højden på logoet */
 }
 
+/* Header styling */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Bruger Flexbox for at arrangere header-indholdet */
+    justify-content: space-between; /* Skubber elementerne til hver sin side af headeren */
 }
 
 /* NAVBAR STIL */
+/* Navbar-containeren bruger Flexbox til at arrangere indholdet */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Bruger Flexbox for at arrangere navbar-elementerne */
+    justify-content: space-between; /* Fordeler pladsen mellem navbar-elementerne */
+    align-items: center; /* Centrerer elementerne vertikalt i navbaren */
 }
 
+/* Styling af navbar-liste */
 .navbar ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    font-size: 0.9rem;
+    list-style: none; /* Fjerner standard punktmærker fra listen */
+    display: flex; /* Bruger Flexbox til at arrangere liste-elementerne horisontalt */
+    padding: 0; /* Fjerner padding */
+    margin: 0; /* Fjerner margin */
+    font-size: 0.9rem; /* Sætter skrifttypestørrelsen for liste-elementerne */
 }
 
+/* Styling af navbar liste-items */
 .navbar li {
-    position: relative;
-    padding: 10px;
+    position: relative; /* Sikrer, at der kan placeres dropdown-menuer relativt til liste-elementerne */
+    padding: 10px; /* Tilføjer padding rundt om hvert liste-item */
 }
 
+/* Styling af navbar-links */
 .navbar a {
-    text-decoration: none;
-    color: #5e4795;
-    font-weight: bold;
+    text-decoration: none; /* Fjerner understregning på links */
+    color: #5e4795; /* Sætter farven på link-teksten til lilla */
+    font-weight: bold; /* Gør link-teksten fed */
 }
 
+/* Styling af navbar-links ved hover */
 .navbar a:hover {
-    color: #3d3570;
+    color: #3d3570; /* Skifter link-farven til mørkere lilla ved hover */
 }
 
+/* Styling af navbar-billeder */
 .navbar img {
-    width: 100px;
+    width: 100px; /* Sætter bredden af billederne i navbaren til 100px */
 }
 
+/* Skjuler menuen på små skærme */
 #menu-bar {
-    display: none;
+    display: none; /* Skjuler menubar-elementet som standard */
 }
 
+/* Skjuler label på mobilskærme */
 label {
-    display: none;
+    display: none; /* Skjuler label, som muligvis bruges til burger-menuen */
 }
 
 /* STYLE FOR DROPDOWN MENUPUNKTER */
+/* Skjuler dropdown-menuen som standard */
 .navbar li ul {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    z-index: 1;
+    display: none; /* Skjuler undermenuen som standard */
+    position: absolute; /* Placering af menuen i forhold til dens parent */
+    background-color: #fff; /* Hvid baggrundsfarve for undermenuen */
+    padding: 10px; /* Indre mellemrum i undermenuen */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Tilføjer en skygge for dybdeeffekt */
+    z-index: 1; /* Sikrer, at dropdown-menuen er ovenpå andre elementer */
 }
 
+/* Når der hoveres på en liste-item, vises undermenuen */
 .navbar li:hover > ul {
-    display: block;
+    display: block; /* Viser undermenuen når man hoverer over menu-item */
 }
 
-
-/* FOOTER */ 
+/* FOOTER */
+/* Footer-styling - baggrund og tekstfarve */
 footer {
-    background-color: #313131; /* Gør baggrunden sort */
-    padding: 40px 20px;
-    color: white;
-    font-family: 'Jockey One', sans-serif; /* Optional - justerer fonten */
+    background-color: #313131; /* Sort baggrund */
+    padding: 40px 20px; /* Giver luft omkring footer-indholdet */
+    color: white; /* Hvid tekst */
+    font-family: 'Jockey One', sans-serif; /* Angiver skrifttypen for footer */
 }
 
 /* FOOTER-CONTAINER */
+/* Opsætning af containeren i footer for layout */
 .footer-container {
-    display: flex;
+    display: flex; /* Bruger Flexbox til at arrangere indholdet */
 }
 
+/* Generel footer styling - justering og tilpasning af elementer */
 footer {
-    display: flex;
+    display: flex; /* Bruger Flexbox for layout */
     justify-content: space-between; /* Skubber elementerne til hver sin side */
     align-items: flex-start; /* Justerer elementerne langs toppen */
     background-color: #313131; /* Sort baggrund */
     padding: 20px; /* Giver luft omkring indholdet */
-    color: white; /* Hvid tekst */
+    color: white; /* Hvid tekstfarve */
 }
 
+/* Footer sektion for andet indhold */
 .footer-andet {
-    flex: 1; /* Sørger for fleksibel tilpasning */
-    margin-right: -13rem;
+    flex: 1; /* Sørger for, at denne sektion kan tilpasse sig fleksibelt */
+    margin-right: -13rem; /* Flytter denne sektion lidt til venstre */
 }
 
+/* Footer kontakt-sektion - justering af tekst */
 .footer-kontakt {
-    text-align: left;
-    flex: 1;
+    text-align: left; /* Venstrestiller teksten */
+    flex: 1; /* Sørger for, at denne sektion kan tilpasse sig fleksibelt */
 }
 
+/* Styling af links i footer */
 footer a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Sætter tekstfarven til hvid */
+    text-decoration: none; /* Fjerner understregning fra links */
 }
 
+/* Footer link hover - Ændrer farven på links når de hoveres */
 footer a:hover {
-    color: #5e4795; 
+    color: #5e4795; /* Skifter farven på links til en lilla farve, når musen er over */
 }
 
+/* Sociale medie ikoner - Layout og justering */
 .socials {
-    display: flex;
-    gap: 1rem;
-    flex: 1rem;
-    flex-direction: row;
-    margin-top: 5.5rem;
-    margin-left: 1rem;
+    display: flex; /* Bruger Flexbox til at arrangere ikonerne */
+    gap: 1rem; /* Tilføjer mellemrum mellem de sociale ikoner */
+    flex: 1rem; /* Tildeler et fleksibelt område til de sociale ikoner */
+    flex-direction: row; /* Arrangerer ikonerne horisontalt */
+    margin-top: 5.5rem; /* Giver lidt afstand fra toppen */
+    margin-left: 1rem; /* Tilføjer margin til venstre */
 }
 
+/* Justerer margin for hver social ikon */
 .footer-icon {
-    margin-right: 10px;
+    margin-right: 10px; /* Giver lidt afstand mellem ikonerne til højre */
 }
 
+/* Footer logo - Justering af størrelse på footer logo */
 .footerlogo {
-    width: 30px;
-    height: 30px;
+    width: 30px; /* Sætter bredden på logoet */
+    height: 30px; /* Sætter højden på logoet */
 }
 
+/* Kontakt og Andet sektioner - Justering af tekst og fleksibilitet */
 .kontakt, .andet {
-    text-align: left; /* Venstrestillet tekst */
-    flex: 1 1 300px; /* Sørger for at disse sektioner kan tilpasse sig */
+    text-align: left; /* Venstrestiller teksten */
+    flex: 1 1 300px; /* Sørger for at sektionerne kan tilpasse sig, min. bredde 300px */
 }
 
+/* Footer links - Basis styling for links i footer */
 footer a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Sætter standard farve på links til hvid */
+    text-decoration: none; /* Fjerner understregning fra links */
 }
 
+/* Footer link hover - Ændrer farven på links når de hoveres */
 footer a:hover {
-    color: #5e4795;
+    color: #5e4795; /* Skifter farven på links til en lilla farve, når musen er over */
 }
 
+/* Footer span - Gør span tags til blok elementer */
 footer span {
-    display: block;
-} 
+    display: block; /* Ændrer span til et blok-element, så det fylder hele linjen */
+}
 
 
-/* NYHEDSBREV SEKTION */
+/* NYHEDSBREV SEKTION - Justering af layout */
 .nyhedsbrev {
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
-    justify-content: flex-start;
+    display: flex; /* Bruger Flexbox til at arrangere indholdet */
+    flex-direction: row-reverse; /* Arrangerer elementerne fra højre mod venstre */
+    align-content: center; /* Centrerer indholdet vertikalt */
+    justify-content: flex-start; /* Justerer indholdet til venstre */
 }
 
+/* Vilkår sektion - Justering af layout */
 .vilkaar {
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
-    justify-content: flex-start;
+    display: flex; /* Bruger Flexbox til at arrangere indholdet */
+    flex-direction: row-reverse; /* Arrangerer elementerne fra højre mod venstre */
+    align-content: center; /* Centrerer indholdet vertikalt */
+    justify-content: flex-start; /* Justerer indholdet til venstre */
 }
 
+/* FAQ sektion - Justering af layout */
 .faq {
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
-    justify-content: flex-start;
+    display: flex; /* Bruger Flexbox til at arrangere indholdet */
+    flex-direction: row-reverse; /* Arrangerer elementerne fra højre mod venstre */
+    align-content: center; /* Centrerer indholdet vertikalt */
+    justify-content: flex-start; /* Justerer indholdet til venstre */
 }
 
 /* RESPONSIVE DESIGN */
@@ -202,112 +233,125 @@ footer {
     padding: 30px 15px; /* Justerer padding på mobile enheder */
 }
 
+/* Footer logo - Justerer størrelsen på footer-logoet */
 .footerlogo {
-    width: 3rem;
-    height: 3rem;
+    width: 3rem; /* Sætter bredden på logoet */
+    height: 3rem; /* Sætter højden på logoet */
 }
 
+/* Footer sektioner - Centrerer teksten på små skærme */
 .kontakt, .andet {
     text-align: center; /* Centrerer teksten på små skærme */
 }
 
-/* FOOTER */ 
+/* FOOTER - Justering af baggrundsfarve, tekst og font */
 footer {
-background-color: #313131; /* Gør baggrunden sort */
-color: white;
-font-family: 'Jockey One', sans-serif; /* Optional - justerer fonten */
+    background-color: #313131; /* Sætter baggrundsfarven til mørk grå */
+    color: white; /* Sætter tekstfarven til hvid */
+    font-family: 'Jockey One', sans-serif; /* Sætter fonten */
 }
 
+/* Footer layout - Flex container til at arrangere indholdet vertikalt */
 footer {
-display: flex;
-background-color: #313131;
-color: white;
-flex-direction: column;
-text-align: left;
+    display: flex; /* Aktiverer Flexbox layout */
+    background-color: #313131; /* Sætter baggrunden til mørk grå */
+    color: white; /* Sætter tekstfarven til hvid */
+    flex-direction: column; /* Arrangerer indholdet i en kolonne */
+    text-align: left; /* Venstrestiller al tekst */
 }
 
+/* Andet - Justering af sektionen 'andet' i footeren */
 .andet {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex; /* Aktivere flexbox */
+    flex-direction: column; /* Arrangerer børnene vertikalt */
+    align-items: flex-start; /* Justerer børnene til venstre */
 }
 
+/* Margin på footer sektionen 'andet' */
 .footer-andet {
-    margin-top: 1rem;
+    margin-top: 1rem; /* Tilføjer margin mellem sektioner */
 }
 
+/* Footer kontakt - Justering af kontaktsektionen */
 .footer-kontakt {
-text-align: left;
-flex: 1;
-display: flex;
-flex-direction: column;
+    text-align: left; /* Venstrestiller teksten */
+    flex: 1; /* Gør sektionen fleksibel så den kan tilpasse sig */
+    display: flex; /* Aktivere flexbox for nemmere justering af indholdet */
+    flex-direction: column; /* Arrangerer børnene vertikalt */
 }
 
+/* Sociale medie ikoner - Justering af placering og margin */
 .socials {
-justify-content: center;
-margin-bottom: 1rem;
-margin-left: 2rem;
+    justify-content: center; /* Centrerer de sociale ikoner */
+    margin-bottom: 1rem; /* Tilføjer margin nederst på ikonerne */
+    margin-left: 2rem; /* Tilføjer margin til venstre på de sociale ikoner */
 }
 
+/* Kontakt sektion - Sørger for korrekt justering af kontaktindholdet */
 .kontakt {
-text-align: left; /* Venstrestillet tekst */
-flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
+    text-align: left; /* Venstrestiller teksten */
+    flex: 1; /* Gør sektionen fleksibel så den kan tilpasse sig */
 }
-    }
 
 /* Mobilskærme */
-@media (max-width: 600px) { 
+@media (max-width: 600px) {}
 
+    /* Styling af logo på mobilskærme */
     .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 6rem;
-        height: 7.7rem;
-        margin: auto;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        display: flex; /* Bruger flexbox til centrering af logo */
+        justify-content: center; /* Centrerer logoet horisontalt */
+        align-items: center; /* Centrerer logoet vertikalt */
+        width: 6rem; /* Sætter en fast bredde på logoet */
+        height: 7.7rem; /* Sætter en fast højde på logoet */
+        margin: auto; /* Centrerer logoet på siden */
+        padding-top: 1rem; /* Lidt padding på toppen af logoet */
+        padding-bottom: 1rem; /* Lidt padding på bunden af logoet */
     }
 
-    .burger-checkbox{
-        display: none;
+/* Skjuler burger-checkbox, som bruges til at kontrollere menuen */
+    .burger-checkbox {
+        display: none; /* Skjuler burger-checkboxen for mobilskærme */
     }
     
-    .burger{
-        color: #5e4795;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        width: 1rem;
-        margin: 0.5rem;
-        font-size: 2.6rem;
+/* Styling af burger-menuen */
+    .burger {
+        color: #5e4795; /* Sætter farven på burger-ikonet */
+        display: flex; /* Bruger flexbox til at arrangere burger-linjerne vertikalt */
+        flex-direction: column; /* Arranger burger-linjerne vertikalt */
+        cursor: pointer; /* Ændrer musen til en pointer ved hover */
+        position: absolute; /* Positionerer burger-menuen absolut */
+        top: 1rem; /* Placerer burger-menuen 1 rem fra toppen af skærmen */
+        right: 1rem; /* Placerer burger-menuen 1 rem fra højre kant af skærmen */
+        width: 1rem; /* Sætter bredden på burger-ikonet */
+        margin: 0.5rem; /* Tilføjer margin omkring burger-ikonet */
+        font-size: 2.6rem; /* Gør burger-ikonet større */
     }
 
-    .navbar ul li:focus-within > ul,
-    .navbar ul li:hover > ul {
-        display: block;
-    }
-    
-    .navbar{
-        display: none;
-        background-color: #5e4795;
-        position: absolute;
-        top: 5rem;
-        right: 0;
-        width: 100%;
-        text-align: left;
-        font-family: 'Jockey One', sans-serif;
-        z-index: 9999;
-    }
+    /* Når en listeelement (li) er i fokus eller bliver hoveret over, vis undermenuen */
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul {
+    display: block; /* Gør undermenuen synlig, når li er i fokus eller hoveres */
+}
 
-    .burger-checkbox:checked ~ .menubar{
-        display: block;
-    }
+/* Styling af navigationsbaren (navbar) */
+.navbar {
+    display: none; /* Skjuler navbaren som standard */
+    background-color: #5e4795; /* Sætter en baggrundsfarve til navbaren */
+    position: absolute; /* Gør navbaren absolut placeret i forhold til dens forælder */
+    top: 5rem; /* Placerer navbaren 5 rem fra toppen af skærmen */
+    right: 0; /* Placerer navbaren i højre hjørne af skærmen */
+    width: 100%; /* Gør navbaren 100% bred */
+    text-align: left; /* Justerer tekstindholdet til venstre i navbaren */
+    font-family: 'Jockey One', sans-serif; /* Sætter fonten til 'Jockey One' */
+    z-index: 9999; /* Sørger for at navbaren er oven på andre elementer */
+}
 
-   /* Menuens indhold */
+/* Når burger-menuen er checked, vises menuen */
+.burger-checkbox:checked ~ .menubar {
+    display: block; /* Gør menulinjen synlig, når burger-checkboxen er checked */
+}
+
+/* Menuens indhold */
 .navbar ul {
     display: block; /* Viser menupunkterne i blokke */
     width: 100%; /* Fylder hele bredden */
@@ -324,7 +368,7 @@ flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
 }
 
 .navbar ul li a {
-    color: white; /* Sort tekstfarve */
+    color: white; /* Hvid tekstfarve */
     text-decoration: none; /* Ingen understregning */
 }
 
@@ -335,7 +379,7 @@ flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
 
 .navba ul li ul li {
     padding: 10px; /* Indre mellemrum i undermenuen */
-    color: white; /* Sort tekstfarve */
+    color: white; /* Hvid tekstfarve */
 }
 
 .navbar ul li ul li {
@@ -344,87 +388,81 @@ flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
 }
 
 .navbar ul li ul li a {
-    color: white; /* Sort tekstfarve */
+    color: white; /* Hvid tekstfarve */
     text-decoration: none; /* Ingen understregning */
     font-size: 0.9rem; /* Mindre tekststørrelse */
 }
 
 .navbar ul li ul li a:hover {
     text-decoration: none; /* Ingen understregning ved hover */
-    color: #a9b4df; /* Skifter tekstfarve til blå ved hover */
-}
-
-
-    footer {
-        padding: 30px 15px; /* Justerer padding på mobile enheder */
-    }
-
-    .footerlogo {
-        width: 20px;
-        height: 20px;
-    }
-
-    .kontakt, .andet {
-        text-align: center; /* Centrerer teksten på små skærme */
-    }
-
-/* FOOTER */ 
-footer {
-    background-color: #313131; /* Gør baggrunden sort */
-    padding: 40px 20px;
-    color: white;
-    font-family: 'Jockey One', sans-serif; /* Optional - justerer fonten */
+    color: #a9b4df; /* Skifter tekstfarve ved hover */
 }
 
 footer {
-    display: flex;
-    background-color: #313131;
-    padding: 0.7rem;
-    color: white;
-    flex-direction: column;
-    text-align: left;
-}
-
-.andet {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.footer-andet {
-    margin-top: 1rem;
-}
-
-.footer-kontakt {
-    text-align: left;
-    flex: 1;
-}
-
-.socials {
-    display: flex;
-    gap: 1rem;
-    flex: 1rem;
-    flex-direction: row;
-    margin-top: 1rem;
-    margin-left: -0.3rem;
-}
-
-.footer-icon {
-    margin-right: 10px;
+    padding: 30px 15px; /* Justerer padding på mobile enheder */
 }
 
 .footerlogo {
-    width: 2rem;
-    height: 2rem;
+    width: 20px; /* Mindre logo på mobile enheder */
+    height: 20px; /* Mindre logo på mobile enheder */
+}
+
+.kontakt, .andet {
+    text-align: center; /* Centrerer teksten på små skærme */
+}
+
+/* FOOTER */
+footer {
+    background-color: #313131; /* Gør baggrunden sort */
+    padding: 40px 20px; /* Polstring rundt om indholdet */
+    color: white; /* Hvid tekstfarve */
+    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen Jockey One */
+}
+
+footer {
+    display: flex; /* Brug flexbox for layout */
+    background-color: #313131; /* Sort baggrund */
+    padding: 0.7rem; /* Polstring rundt om footer */
+    color: white; /* Hvid tekstfarve */
+    flex-direction: column; /* Arrangerer elementerne i en kolonne */
+    text-align: left; /* Venstrestiller teksten */
+}
+
+.andet {
+    display: flex; /* Bruger flexbox for at arrangere elementerne */
+    flex-direction: column; /* Arrangerer børnene i en kolonne */
+    align-items: flex-start; /* Venstrestiller børnene */
+}
+
+.footer-andet {
+    margin-top: 1rem; /* Giver mellemrum øverst på denne sektion */
+}
+
+.footer-kontakt {
+    text-align: left; /* Venstrestiller kontakten */
+    flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
+}
+
+.socials {
+    display: flex; /* Bruger flexbox til sociale medier */
+    gap: 1rem; /* Mellemrum mellem ikonerne */
+    flex: 1rem; /* Lader denne sektion tage op plads */
+    flex-direction: row; /* Arrangerer ikonerne horisontalt */
+    margin-top: 1rem; /* Giver margin øverst */
+    margin-left: -0.3rem; /* Justerer venstremargen */
+}
+
+.footer-icon {
+    margin-right: 10px; /* Giver margen på højre side af ikonene */
+}
+
+.footerlogo {
+    width: 2rem; /* Sætter bredden på logoet */
+    height: 2rem; /* Sætter højden på logoet */
 }
 
 .kontakt {
     text-align: left; /* Venstrestillet tekst */
     flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
-}
- }   
-
-
-
-
-
+} 
+    }
