@@ -420,7 +420,7 @@ main {
     font-weight: bold;
     border-radius: 5px;
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .buy-ticket:hover {
@@ -441,13 +441,13 @@ main {
     align-items: flex-start;
     line-height: 2rem;
     list-style: none;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
 }
 
 .event-name {
     display: flex;
     padding-left: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .se-alle-tider {
@@ -467,7 +467,7 @@ main {
 .femy-quote img {
     max-width: 90%;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-right: -0.6rem;
     border-radius: 8px;
 }
@@ -491,17 +491,24 @@ main {
 .alle-kampagner {
     display: flex;
     overflow: hidden;
-    margin-top: 12rem;
+    margin-top: 2rem;
     padding: 2.5rem;
     gap: 15%;
 }
 
-.kampagne1-2 {
+.kampagne1-2,
+.kampagne3 {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     gap: 2rem;
     justify-content: space-between;
+}
+
+.medie-kampagne {
+    display: flex;
+    background-color: #a9b4df;
+    border-radius: 8px;
 }
 
 .kampagne1-2 article {
@@ -509,27 +516,20 @@ main {
     height: 16rem;
 }
 
-.kampagne3 {
-    display: flex;
-    width: 25%;
-    background-color: #a9b4df;
-    border-radius: 8px;
-}
-
 .kampagne-billede1 {
-    width: 60%;
+    width: 50%;
     height: 16rem;
     border-radius: 8px;
 }
 
 .kampagne-billede2 {
-    width: 60%;
+    width: 50%;
     height: 16rem;
     border-radius: 8px;
 }
 
 .kampagne-billede3 {
-    width: 100%;
+    width: 50%;
     border-radius: 8px;
 }
 
@@ -722,7 +722,7 @@ main {
     font-weight: bold;
     border-radius: 5px;
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .buy-ticket:hover {
@@ -733,7 +733,7 @@ main {
     font-size: 1.4rem;
     font-weight: bold;
     display: flex;
-    padding-left: 1rem;
+    padding-left: 1.2rem;
 }
 
 .event-liste {
@@ -743,7 +743,7 @@ main {
     align-items: flex-start;
     line-height: 2rem;
     list-style: none;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
 }
 
 .event-name {
@@ -769,7 +769,7 @@ main {
 .femy-quote img {
     max-width: 90%;
     height: auto;
-    margin-top: 0.5rem;
+    margin-top: 4rem;
     margin-right: -0.6rem;
     border-radius: 8px;
 }
@@ -792,18 +792,26 @@ main {
 /* KAMPAGNER FORSIDE */
 .alle-kampagner {
     display: flex;
+    flex-direction: column;
     overflow: hidden;
-    margin-top: 12rem;
+    margin-top: 2rem;
     padding: 2.5rem;
     gap: 15%;
 }
 
-.kampagne1-2 {
+.kampagne1-2,
+.kampagne3 {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     gap: 2rem;
     justify-content: space-between;
+}
+
+.medie-kampagne {
+    display: flex;
+    background-color: #a9b4df;
+    border-radius: 8px;
 }
 
 .kampagne1-2 article {
@@ -811,27 +819,20 @@ main {
     height: 16rem;
 }
 
-.kampagne3 {
-    display: flex;
-    width: 25%;
-    background-color: #a9b4df;
-    border-radius: 8px;
-}
-
 .kampagne-billede1 {
-    width: 60%;
+    width: 50%;
     height: 16rem;
     border-radius: 8px;
 }
 
 .kampagne-billede2 {
-    width: 60%;
+    width: 50%;
     height: 16rem;
     border-radius: 8px;
 }
 
 .kampagne-billede3 {
-    width: 100%;
+    width: 50%;
     border-radius: 8px;
 }
 
