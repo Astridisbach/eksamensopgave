@@ -225,8 +225,8 @@ footer {
 }
 
 .footerlogo {
-    width: 20px;
-    height: 20px;
+    width: 3rem;
+    height: 3rem;
 }
 
 .kontakt, .andet {
@@ -273,7 +273,7 @@ margin-left: 2rem;
 
 .kontakt {
 text-align: left; /* Venstrestillet tekst */
-flex: 1 1 300px; /* Sørger for at disse sektioner kan tilpasse sig */
+flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
 }
     }
 
@@ -338,15 +338,18 @@ footer {
 }
 
 .footerlogo {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .kontakt {
     text-align: left; /* Venstrestillet tekst */
-    flex: 1 1 300px; /* Sørger for at disse sektioner kan tilpasse sig */
+    flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
 }
+
     }   
+
+
 
 
 

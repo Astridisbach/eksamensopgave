@@ -585,6 +585,7 @@ main {
     background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
     padding: 2rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .nyhedsbrev-tekst h2 {
@@ -888,6 +889,7 @@ main {
     background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
     padding: 2rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .nyhedsbrev-tekst h2 {
