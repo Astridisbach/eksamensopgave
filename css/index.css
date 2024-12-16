@@ -579,10 +579,6 @@ main {
     padding: 0.7rem;
 }
 
-.kampagne-tekst {
-    margin-top: 1.4rem;
-}
-
 .kampagne-tekst1 {
     font-size: 1.4rem;
 }
@@ -833,7 +829,6 @@ main {
     display: flex;
     background-color: #a9b4df;
     border-radius: 8px;
-    flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: flex-start;
@@ -846,7 +841,7 @@ main {
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-left: 1.2rem;
+    margin-left: 5.9rem;
 }
 
 .kampagne1-2 article {
