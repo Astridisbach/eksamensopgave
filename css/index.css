@@ -629,38 +629,43 @@ main {
     width: 50%;
 }
 
+/* Donation-sektionen */
 .donation {
-    display: flex;
-    background-color: #a9b4df;
-    border-radius: 8px;
+    display: flex; /* Bruger flexbox til at layout'e elementerne horisontalt */
+    background-color: #a9b4df; /* Sætter baggrundsfarven til en lys lilla */
+    border-radius: 8px; /* Runder hjørnerne af containeren */
 }
 
+/* Artikel-indhold i donation-sektionen */
 .donation article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    display: flex; /* Bruger flexbox til at arrangere indholdet i artiklen */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    width: 50%; /* Sætter bredden af artiklen til 50% af forælderen */
 }
 
+/* Stil for medie-kampagne artikel */
 .medie-kampagne article {
-    padding: 0.7rem;
+    padding: 0.7rem; /* Tilføjer padding på 0.7rem omkring artiklen */
 }
 
+/* Stil for tekst i kampagne-sektionen */
 .kampagne-tekst1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Sætter skriftstørrelsen på teksten i kampagnen til 1.4rem */
 }
 
+/* Stil for knappen i kampagnen */
 .kampagne-button {
-    background-color: #594891;
-    color: white;
-    font-size: 1.1rem;
-    padding: 0.1rem 2.8rem;
-    margin-top: 1.3rem;
-    font-family: 'Jockey One', sans-serif;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+    background-color: #594891; /* Sætter baggrundsfarven på knappen til en mørk lilla */
+    color: white; /* Sætter tekstfarven på knappen til hvid */
+    font-size: 1.1rem; /* Sætter skriftstørrelsen på knappen til 1.1rem */
+    padding: 0.1rem 2.8rem; /* Tilføjer padding på top/bund og venstre/højre for at gøre knappen større */
+    margin-top: 1.3rem; /* Tilføjer margin øverst på knappen */
+    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen 'Jockey One' til teksten på knappen */
+    border-radius: 8px; /* Runder hjørnerne af knappen */
+    border: none; /* Fjerner kantlinjen fra knappen */
+    cursor: pointer; /* Ændrer musemarkøren til en hånd, når man holder musen over knappen */
 }
 
 /* NYHEDSBREV */
@@ -776,121 +781,121 @@ main {
 
 /* KONCERT-OVERSIGT */
 .billet-køb {
-    width: 66%;
-    height: 36rem;
-    background-color: #a9b4df;
-    padding: 0.1rem 0rem;
-    border-radius: 8px;
-    margin: -3rem 0 0 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
+    width: 66%; /* Sætter bredden af billet-køb containeren til 66% af dens forælder */
+    height: 36rem; /* Sætter højden af billet-køb containeren til 36rem */
+    background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
+    padding: 0.1rem 0rem; /* Tilføjer lidt padding på top/bund, men ingen på venstre/højre */
+    border-radius: 8px; /* Runder hjørnerne af containeren */
+    margin: -3rem 0 0 0rem; /* Tilføjer negativ margin øverst for at flytte containeren opad */
+    display: flex; /* Aktiverer fleksibel layout */
+    flex-direction: column; /* Arrangerer børneelementer vertikalt */
+    justify-content: space-around; /* Fordeler elementerne jævnt med plads mellem dem */
+    position: relative; /* Sætter positionen til relativ for eventuelle efterfølgende absolutte positioneringer */
 }
 
 .anne-roem {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Sætter bredden af billedcontaineren til 100% af dens forælder */
+    height: auto; /* Sætter højden automatisk baseret på billedets proportioner */
 }
 
 .anne-roem img {
-    width: 100%;
+    width: 100%; /* Gør billedet responsivt ved at sætte bredden til 100% af containerens bredde */
 }
 
 .buy-ticket {
-    display: inline-block;
-    background-color: #5e4795;
-    color: white;
-    padding: 0.9rem 0rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 1rem;
-    font-size: 1.4rem;
+    display: inline-block; /* Gør knappen til et inline element, der opfører sig som et blok-element */
+    background-color: #5e4795; /* Sætter baggrundsfarven på knappen til lilla */
+    color: white; /* Sætter tekstfarven til hvid */
+    padding: 0.9rem 0rem; /* Tilføjer padding på top/bund, men ingen til venstre/højre */
+    text-decoration: none; /* Fjerner understregning på linket */
+    font-weight: bold; /* Gør teksten fed */
+    border-radius: 5px; /* Runder hjørnerne af knappen */
+    margin: 1rem; /* Tilføjer margin omkring knappen */
+    font-size: 1.4rem; /* Sætter skriftstørrelsen til 1.4rem */
 }
 
 .buy-ticket:hover {
-    background-color: #3d3570;
+    background-color: #3d3570; /* Ændrer baggrundsfarven på knappen, når musen er over den */
 }
 
 .next-event {
-    font-size: 1.4rem;
-    font-weight: bold;
-    display: flex;
-    padding-left: 1.2rem;
+    font-size: 1.4rem; /* Sætter skriftstørrelsen på næste event til 1.4rem */
+    font-weight: bold; /* Gør teksten fed */
+    display: flex; /* Aktiverer fleksibel layout for at justere elementerne */
+    padding-left: 1.2rem; /* Tilføjer padding til venstre */
 }
 
 .event-liste {
-    display: flex;
-    padding-left: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 2rem;
-    list-style: none;
-    font-size: 1.1rem;
+    display: flex; /* Aktiverer fleksibel layout */
+    padding-left: 1rem; /* Tilføjer padding til venstre */
+    flex-direction: column; /* Arrangerer eventerne vertikalt */
+    align-items: flex-start; /* Justerer elementerne til venstre */
+    line-height: 2rem; /* Øger linjeafstanden for læsbarhed */
+    list-style: none; /* Fjerner punkttegn fra listen */
+    font-size: 1.1rem; /* Sætter skriftstørrelsen til 1.1rem */
 }
 
 .event-name {
-    display: flex;
-    padding-left: 1rem;
-    font-size: 1rem;
+    display: flex; /* Aktiverer fleksibel layout */
+    padding-left: 1rem; /* Tilføjer padding til venstre */
+    font-size: 1rem; /* Sætter skriftstørrelsen på eventnavnet til 1rem */
 }
 
 .se-alle-tider {
-    display: flex;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    font-size: 1.1rem;
-    text-decoration: none;
+    display: flex; /* Aktiverer fleksibel layout */
+    padding-left: 1rem; /* Tilføjer padding til venstre */
+    padding-top: 0.5rem; /* Tilføjer padding øverst for at skabe lidt afstand */
+    font-size: 1.1rem; /* Sætter skriftstørrelsen til 1.1rem */
+    text-decoration: none; /* Fjerner understregning på linket */
 }
 
 /* ARTIKLER OG KAMPAGNER */
 .femy-quote {
-    margin-top: 0;
-    margin-left: 0;
+    margin-top: 0; /* Fjerner margin øverst */
+    margin-left: 0; /* Fjerner margin til venstre */
 }
 
 .femy-quote img {
-    max-width: 90%;
-    height: auto;
-    margin-top: 4rem;
-    margin-right: -0.6rem;
-    border-radius: 8px;
+    max-width: 90%; /* Sætter den maksimale bredde af billedet til 90% af containerens bredde */
+    height: auto; /* Sætter højden automatisk for at bevare proportionerne */
+    margin-top: 4rem; /* Tilføjer margin øverst for at skabe afstand fra elementet over */
+    margin-right: -0.6rem; /* Tilføjer negativ margin til højre for at justere placeringen af billedet */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
 .femy-quote h2 {
-    font-size: 24px;
-    margin-top: 20px;
-    color: white;
+    font-size: 24px; /* Sætter skriftstørrelsen på overskriften til 24px */
+    margin-top: 20px; /* Tilføjer margin øverst for at skabe afstand fra elementet over */
+    color: white; /* Sætter tekstfarven til hvid */
 }
 
 .femy-interview {
-    color: #5e4795;
-    text-decoration: none;
+    color: #5e4795; /* Sætter tekstfarven til lilla */
+    text-decoration: none; /* Fjerner understregning på linket */
 }
 
 .femy-interview:hover {
-    color: #3d3570;
+    color: #3d3570; /* Ændrer tekstfarven til mørkere lilla, når musen er over linket */
 }
 
 /* KAMPAGNER FORSIDE */
 .alle-kampagner {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-top: 2rem;
-    padding: 2.5rem;
-    gap: 15%;
+    display: flex; /* Aktiverer fleksibel layout for kampagnerne */
+    flex-direction: column; /* Arrangerer kampagnerne vertikalt */
+    overflow: hidden; /* Skjuler eventuelt overskydende indhold */
+    margin-top: 2rem; /* Tilføjer margin øverst */
+    padding: 2.5rem; /* Tilføjer padding omkring containeren */
+    gap: 15%; /* Tilføjer afstand mellem elementerne */
 }
 
 .kampagne1-2,
 .kampagne3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 2rem;
-    justify-content: space-between;
-    margin-top: 1rem;
+    display: flex; /* Aktiverer fleksibel layout for kampagnerne */
+    flex-direction: column; /* Arrangerer kampagnerne vertikalt */
+    width: 100%; /* Sætter bredden til 100% af containerens bredde */
+    gap: 2rem; /* Tilføjer afstand mellem kampagnerne */
+    justify-content: space-between; /* Fordeler kampagnerne jævnt */
+    margin-top: 1rem; /* Tilføjer margin øverst */
 }
 
 /* MEDIE-KAMPAGNE */
