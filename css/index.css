@@ -317,7 +317,7 @@ form button:hover {
 /* RESPONSIVE DESIGN */
 @media (max-width: 1030px) {
     .event-liste {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
     }
 }
 
