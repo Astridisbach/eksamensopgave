@@ -44,7 +44,7 @@ main {
 }
 
 .banner-img {
-    width: 60%;
+    width: 50%;
 }
 
 /* STYLE AF BILLEDET UNDER NAVBAR */
@@ -364,7 +364,7 @@ main {
 }
 
 .banner-img {
-    width: 60%;
+    display: none;
 }
 
 /* STYLE AF BILLEDET UNDER NAVBAR */
@@ -390,7 +390,7 @@ main {
 
 /* KONCERT-OVERSIGT */
 .billet-køb {
-    width: 30%;
+    width: 66%;
     height: 36rem;
     background-color: #a9b4df;
     padding: 0.1rem 0rem;
@@ -490,6 +490,7 @@ main {
 /* KAMPAGNER FORSIDE */
 .alle-kampagner {
     display: flex;
+    flex-direction: column;
     overflow: hidden;
     margin-top: 2rem;
     padding: 2.5rem;
@@ -503,12 +504,26 @@ main {
     width: 100%;
     gap: 2rem;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .medie-kampagne {
     display: flex;
     background-color: #a9b4df;
     border-radius: 8px;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.medie-kampagne article {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.2rem;
 }
 
 .kampagne1-2 article {
@@ -668,7 +683,7 @@ main {
 }
 
 .banner-img {
-    width: 60%;
+    display: none;
 }
 
 /* STYLE AF BILLEDET UNDER NAVBAR */
@@ -693,7 +708,7 @@ main {
 
 /* KONCERT-OVERSIGT */
 .billet-køb {
-    width: 30%;
+    width: 66%;
     height: 36rem;
     background-color: #a9b4df;
     padding: 0.1rem 0rem;
@@ -807,12 +822,27 @@ main {
     width: 100%;
     gap: 2rem;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .medie-kampagne {
     display: flex;
     background-color: #a9b4df;
     border-radius: 8px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.medie-kampagne article {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.2rem;
 }
 
 .kampagne1-2 article {
