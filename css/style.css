@@ -33,34 +33,10 @@ body {
     max-height: 100px;
 }
 
-/* STIL FOR SØGEFELTET */
-.search-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    display: none;
-}
-
-.search-input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #5e4795;
-    font-size: 16px;
-}
-
-.search-button {
-    padding: 10px;
-    background-color: #5e4795;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 header {
     display: flex;
     justify-content: space-between;
 }
-
 
 /* NAVBAR STIL */
 .navbar {
@@ -281,6 +257,104 @@ flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
 
 /* Mobilskærme */
 @media (max-width: 600px) { 
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 7.7rem;
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .burger-checkbox{
+        display: none;
+    }
+    
+    .burger{
+        color: #5e4795;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 1rem;
+        margin: 0.5rem;
+        font-size: 2.6rem;
+    }
+
+    .navbar ul li:focus-within > ul,
+    .navbar ul li:hover > ul {
+        display: block;
+    }
+    
+    .navbar{
+        display: none;
+        background-color: #5e4795;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        text-align: left;
+        font-family: 'Jockey One', sans-serif;
+        z-index: 9999;
+    }
+
+    .burger-checkbox:checked ~ .menubar{
+        display: block;
+    }
+
+   /* Menuens indhold */
+.navbar ul {
+    display: block; /* Viser menupunkterne i blokke */
+    width: 100%; /* Fylder hele bredden */
+    gap: 0; /* Ingen afstand mellem elementer */
+    list-style: none; /* Fjerner punktopstilling */
+}
+
+/* Menuens punkter */
+.navbar ul li {
+    width: 220px; /* Bredde på menupunkterne */
+    margin: 15px; /* Mellemrum mellem menupunkterne */
+    padding: 15px; /* Indre mellemrum for tekst */
+    list-style: none; /* Fjerner punktopstilling */
+}
+
+.navbar ul li a {
+    color: white; /* Sort tekstfarve */
+    text-decoration: none; /* Ingen understregning */
+}
+
+/* Undermenu */
+.navbar ul li ul {
+    display: none; /* Skjuler undermenuen som standard */
+}
+
+.navba ul li ul li {
+    padding: 10px; /* Indre mellemrum i undermenuen */
+    color: white; /* Sort tekstfarve */
+}
+
+.navbar ul li ul li {
+    text-align: left; /* Justerer teksten til venstre */
+    padding: 0.5rem 1rem; /* Tilføjer padding for indrykning */
+}
+
+.navbar ul li ul li a {
+    color: white; /* Sort tekstfarve */
+    text-decoration: none; /* Ingen understregning */
+    font-size: 0.9rem; /* Mindre tekststørrelse */
+}
+
+.navbar ul li ul li a:hover {
+    text-decoration: none; /* Ingen understregning ved hover */
+    color: #a9b4df; /* Skifter tekstfarve til blå ved hover */
+}
+
+
     footer {
         padding: 30px 15px; /* Justerer padding på mobile enheder */
     }
@@ -348,8 +422,7 @@ footer {
     text-align: left; /* Venstrestillet tekst */
     flex: 1; /* Sørger for at disse sektioner kan tilpasse sig */
 }
-
-    }   
+ }   
 
 
 
