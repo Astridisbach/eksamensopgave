@@ -327,59 +327,59 @@ main {
 
 /* NYHEDSBREV */
 .nyhedsbrev-container {
-    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
-    padding: 2rem;
-    margin-top: 2rem;
+    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df); /* Sætter en baggrund med en gradient, der går fra lys lilla til grå og tilbage til lys lilla */
+    padding: 2rem; /* Tilføjer padding omkring indholdet i containeren */
+    margin-top: 2rem; /* Tilføjer margin øverst for at skabe afstand fra elementet over */
 }
 
 .nyhedsbrev-tekst h2 {
-    font-size:2rem;
+    font-size: 2rem; /* Sætter skriftstørrelsen på overskriften til 2rem */
 }
 
 .nyhedsbrev-tekst p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Sætter skriftstørrelsen på paragrafen til 1.5rem */
 }
 
 form input[type="email"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #5e4795;
-    font-size: 16px;
-    margin-right: 10px;
+    padding: 10px; /* Tilføjer padding inde i inputfeltet */
+    border-radius: 5px; /* Runder hjørnerne af inputfeltet */
+    border: 1px solid #5e4795; /* Sætter en lilla kant rundt om inputfeltet */
+    font-size: 16px; /* Sætter skriftstørrelsen i inputfeltet */
+    margin-right: 10px; /* Tilføjer margin til højre for at skabe afstand til knappen */
 }
 
 form button {
-    background-color: #5e4795;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #5e4795; /* Sætter baggrundsfarven på knappen til lilla */
+    color: white; /* Sætter tekstfarven på knappen til hvid */
+    padding: 10px 20px; /* Tilføjer padding inde i knappen (top/bund: 10px, venstre/højre: 20px) */
+    border: none; /* Fjerner standardkanten på knappen */
+    border-radius: 5px; /* Runder hjørnerne af knappen */
+    cursor: pointer; /* Ændrer musemarkøren til en pegefinger, når man holder musen over knappen */
 }
 
 form button:hover {
-    background-color: #3d3570;
+    background-color: #3d3570; /* Ændrer baggrundsfarven på knappen, når man holder musen over den */
 }
 
 .email-submit {
-    padding: 1.6rem;
+    padding: 1.6rem; /* Tilføjer padding omkring submit-knappen */
 }
 
 /* SPONSOR-OVERSIGT */
 .sponsor-container {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 1.6rem;
+    display: flex; /* Aktiverer fleksibel layout */
+    justify-content: center; /* Centrerer sponsorene horisontalt */
+    gap: 4rem; /* Tilføjer afstand (gap) mellem sponsorerne */
+    margin-top: 1rem; /* Tilføjer margin øverst for at skabe afstand fra elementet over */
+    margin-left: 1rem; /* Tilføjer margin til venstre */
+    margin-right: 1rem; /* Tilføjer margin til højre */
+    padding: 1.6rem; /* Tilføjer padding omkring containeren */
 }
 
 .sponsor-container img {
-    max-width: 90%;
-    height: 90px;
-    margin: 0;
+    max-width: 90%; /* Sætter den maksimale bredde på billederne til 90% af containerens bredde */
+    height: 90px; /* Sætter højden på billederne til 90px */
+    margin: 0; /* Fjerner margin omkring billederne */
 }
 
 /* RESPONSIVE DESIGN */
@@ -893,150 +893,155 @@ main {
     margin-top: 1rem;
 }
 
+/* MEDIE-KAMPAGNE */
 .medie-kampagne {
-    display: flex;
-    background-color: #a9b4df;
-    border-radius: 8px;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
+    display: flex; /* Aktiverer fleksibel layout på containeren */
+    background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
+    border-radius: 8px; /* Runder hjørnerne af containeren */
+    align-content: center; /* Centrerer indholdet vertikalt, hvis der er flere rækker */
+    align-items: center; /* Centrerer indholdet horisontalt i containeren */
+    justify-content: flex-start; /* Justerer indholdet mod starten af containeren (venstre side) */
 }
 
 .medie-kampagne article {
-    padding: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5.9rem;
+    padding: 0.7rem; /* Tilføjer padding omkring indholdet i article */
+    display: flex; /* Aktiverer fleksibel layout inde i article */
+    flex-direction: column; /* Arrangerer børneelementer vertikalt */
+    align-content: center; /* Centrerer indholdet vertikalt inden i article */
+    justify-content: center; /* Centrerer indholdet vertikalt inde i article */
+    align-items: center; /* Centrerer indholdet horisontalt inde i article */
+    margin-left: 5.9rem; /* Tilføjer margin til venstre for at skabe afstand til andre elementer */
 }
 
 .kampagne1-2 article {
-    border-radius: 8px;
-    height: 16rem;
+    border-radius: 8px; /* Runder hjørnerne af article */
+    height: 16rem; /* Sætter højden af article til 16rem */
 }
 
+/* KAMPAGNE-BILLEDE STYLES */
 .kampagne-billede1 {
-    width: 50%;
-    height: 16rem;
-    border-radius: 8px;
+    width: 50%; /* Sætter bredden på billedet til 50% af containerens bredde */
+    height: 16rem; /* Sætter højden på billedet til 16rem */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
 .kampagne-billede2 {
-    width: 50%;
-    height: 16rem;
-    border-radius: 8px;
+    width: 50%; /* Sætter bredden på billedet til 50% af containerens bredde */
+    height: 16rem; /* Sætter højden på billedet til 16rem */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
 .kampagne-billede3 {
-    width: 50%;
-    border-radius: 8px;
+    width: 50%; /* Sætter bredden på billedet til 50% af containerens bredde */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
+/* FRIVILLIG TILMELDING */
 .frivillig-tilmelding {
-    display: flex;
-    background-color: #a9b4df;
+    display: flex; /* Aktiverer fleksibel layout på frivillig tilmelding container */
+    background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
 }
 
 .frivillig-tilmelding article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    display: flex; /* Aktiverer fleksibel layout inde i article */
+    flex-direction: column; /* Arrangerer børnelementer vertikalt */
+    align-items: center; /* Centrerer børneelementer horisontalt */
+    justify-content: center; /* Centrerer børneelementer vertikalt */
+    width: 50%; /* Sætter bredden af article til 50% af containerens bredde */
 }
 
+/* DONATION */
 .donation {
-    display: flex;
-    background-color: #a9b4df;
-    border-radius: 8px;
+    display: flex; /* Aktiverer fleksibel layout på donation container */
+    background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
+    border-radius: 8px; /* Runder hjørnerne af donation containeren */
 }
 
 .donation article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    display: flex; /* Aktiverer fleksibel layout inde i article */
+    flex-direction: column; /* Arrangerer børneelementer vertikalt */
+    align-items: center; /* Centrerer børneelementer horisontalt */
+    justify-content: center; /* Centrerer børneelementer vertikalt */
+    width: 50%; /* Sætter bredden af article til 50% af containerens bredde */
 }
 
 .medie-kampagne article {
-    padding: 0.7rem;
+    padding: 0.7rem; /* Tilføjer padding omkring indholdet i article */
 }
 
+/* KAMPAGNE-TEKST */
 .kampagne-tekst1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Sætter skriftstørrelsen til 1.4rem for kampagne teksten */
 }
 
+/* KAMPAGNE-BUTTON */
 .kampagne-button {
-    background-color: #594891;
-    color: white;
-    font-size: 1.1rem;
-    padding: 0.1rem 2.8rem;
-    margin-top: 1.3rem;
-    font-family: 'Jockey One', sans-serif;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+    background-color: #594891; /* Sætter baggrundsfarven på knappen til en mørk lilla */
+    color: white; /* Sætter tekstfarven på knappen til hvid */
+    font-size: 1.1rem; /* Sætter skriftstørrelsen på knappen til 1.1rem */
+    padding: 0.1rem 2.8rem; /* Tilføjer padding inde i knappen (top/bund: 0.1rem, venstre/højre: 2.8rem) */
+    margin-top: 1.3rem; /* Tilføjer margin øverst på knappen for at skabe afstand til elementet over */
+    font-family: 'Jockey One', sans-serif; /* Sætter skrifttypen til 'Jockey One' med fallback til sans-serif */
+    border-radius: 8px; /* Runder hjørnerne af knappen */
+    border: none; /* Fjerner standardkanten på knappen */
+    cursor: pointer; /* Ændrer musemarkøren til en pegefinger, når man holder musen over knappen */
 }
 
 /* NYHEDSBREV */
 .nyhedsbrev-container {
-    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df);
-    padding: 2rem;
-    margin-top: 2rem;
-    width: 100%;
+    background: linear-gradient(to bottom, #a9b4df, #848484 ,#a9b4df); /* Sætter en baggrund med en gradient fra lys lilla til grå og tilbage til lys lilla */
+    padding: 2rem; /* Tilføjer padding omkring indholdet i containeren */
+    margin-top: 2rem; /* Tilføjer margin øverst for at skabe afstand fra elementet over */
+    width: 100%; /* Sætter bredden til 100% af containerens bredde */
 }
 
 .nyhedsbrev-tekst h2 {
-    font-size:2rem;
+    font-size: 2rem; /* Sætter skriftstørrelsen på overskriften til 2rem */
 }
 
 .nyhedsbrev-tekst p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Sætter skriftstørrelsen på paragrafen til 1.5rem */
 }
 
 form input[type="email"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #5e4795;
-    font-size: 16px;
-    margin-right: 10px;
+    padding: 10px; /* Tilføjer padding inde i inputfeltet */
+    border-radius: 5px; /* Runder hjørnerne af inputfeltet */
+    border: 1px solid #5e4795; /* Sætter en lilla kant rundt om inputfeltet */
+    font-size: 16px; /* Sætter skriftstørrelsen i inputfeltet */
+    margin-right: 10px; /* Tilføjer margin til højre for at skabe afstand til knappen */
 }
 
 form button {
-    background-color: #5e4795;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #5e4795; /* Sætter baggrundsfarven på knappen til lilla */
+    color: white; /* Sætter tekstfarven på knappen til hvid */
+    padding: 10px 20px; /* Tilføjer padding inde i knappen (top/bund: 10px, venstre/højre: 20px) */
+    border: none; /* Fjerner standardkanten på knappen */
+    border-radius: 5px; /* Runder hjørnerne af knappen */
+    cursor: pointer; /* Ændrer musemarkøren til en pegefinger, når man holder musen over knappen */
 }
 
 form button:hover {
-    background-color: #3d3570;
+    background-color: #3d3570; /* Ændrer baggrundsfarven på knappen, når man holder musen over den */
 }
 
 .email-submit {
-    padding: 1.6rem;
+    padding: 1.6rem; /* Tilføjer padding omkring submit-knappen */
 }
 
 /* SPONSOR-OVERSIGT */
 .sponsor-container {
-    display: flex;
-    justify-content: center;
-    padding: 1.6rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
+    display: flex; /* Aktiverer fleksibel layout */
+    justify-content: center; /* Centrerer sponsorene horisontalt */
+    padding: 1.6rem; /* Tilføjer padding omkring containeren */
+    flex-direction: column; /* Arrangerer sponsorene vertikalt i containeren */
+    align-items: center; /* Centrerer sponsorene horisontalt */
+    gap: 0px; /* Fjerner afstand mellem sponsorene */
 }
 
 .sponsor-container img {
-    max-width: 90%;
-    height: 90px;
-    margin: 0;
+    max-width: 90%; /* Sætter den maksimale bredde på billederne til 90% af containerens bredde */
+    height: 90px; /* Sætter højden på billederne til 90px */
+    margin: 0; /* Fjerner margin omkring billederne */
 }
 
-
-}
+    }
