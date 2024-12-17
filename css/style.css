@@ -54,17 +54,17 @@ header {
 }
 
 /* navbar */
-header{
+header {
     position: relative;
     top: 0;
     left: 0;
     right: 0;
     background: #a9b4df;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px #6c6c6c;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 15rem;
     z-index: 99;
     
@@ -128,6 +128,7 @@ header{
     display: none;
  }
 
+ 
 /* FOOTER */
 /* Footer-styling - baggrund og tekstfarve */
 footer {
@@ -141,6 +142,7 @@ footer {
 /* Opsætning af containeren i footer for layout */
 .footer-container {
     display: flex; /* Bruger Flexbox til at arrangere indholdet */
+    flex-direction: column;
 }
 
 /* Generel footer styling - justering og tilpasning af elementer */
@@ -182,7 +184,7 @@ footer a:hover {
     gap: 1rem; /* Tilføjer mellemrum mellem de sociale ikoner */
     flex: 1rem; /* Tildeler et fleksibelt område til de sociale ikoner */
     flex-direction: row; /* Arrangerer ikonerne horisontalt */
-    margin-top: 5.5rem; /* Giver lidt afstand fra toppen */
+    margin-top: 2.5rem; /* Giver lidt afstand fra toppen */
     margin-left: 1rem; /* Tilføjer margin til venstre */
 }
 
@@ -193,14 +195,14 @@ footer a:hover {
 
 /* Footer logo - Justering af størrelse på footer logo */
 .footerlogo {
-    width: 30px; /* Sætter bredden på logoet */
+    width: auto; /* Sætter bredden på logoet */
     height: 30px; /* Sætter højden på logoet */
 }
 
 /* Kontakt og Andet sektioner - Justering af tekst og fleksibilitet */
 .kontakt, .andet {
     text-align: left; /* Venstrestiller teksten */
-    flex: 1 1 300px; /* Sørger for at sektionerne kan tilpasse sig, min. bredde 300px */
+    /* flex: 1 1 300px; Sørger for at sektionerne kan tilpasse sig, min. bredde 300px */
 }
 
 /* Footer links - Basis styling for links i footer */
@@ -278,7 +280,7 @@ header{
     left: 0;
     right: 0;
     background-color: rgba(169, 180, 223, 0.87);
-    border-top: 1px rgba(0,0,0,0.1);
+    border-top: 1px #6c6c6c;
     display: none;
  }
  
@@ -409,7 +411,7 @@ footer {
         left: 0;
         right: 0;
         background-color: rgba(169, 180, 223, 0.87);
-        border-top: 1px rgba(0,0,0,0.1);
+        border-top: 1px   #6c6c6c;
         display: none;
         
      }

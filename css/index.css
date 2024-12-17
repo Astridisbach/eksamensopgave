@@ -16,6 +16,21 @@ body {
     padding: 0;
 }
 
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #a9b4df;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    z-index: 99;
+}
+
 /* Klasse til fremhævet tekst */
 /* Gør teksten hvid, når denne klasse anvendes. */
 .highlight {
