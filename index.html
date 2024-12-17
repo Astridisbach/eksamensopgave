@@ -22,177 +22,199 @@
 </head>
 
 <body>
-    <header class="menubar"> 
+    <header class="menubar"> <!-- Hovedmenuen -->
+    
+        <!-- Sektion til bannerbillede -->
         <section class="banner-img">
-            <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a>
+            <a href=""><img src="image/forside/radar.webp" alt="Radar" class="banner-img"></a> <!-- Linket peger på forsiden -->
         </section>
-
-    <section class="headerbyt">
-    <!-- INDPAKNING AF LOGO -->
-    <a href="index.html">
-        <img src="image/navbar/radar.logo.webp" alt="Radar-logo-img" class="logo">
-    </a>
-
-        <input type="checkbox" id="menu-bar"> <!-- KONTROLLERER OM MENUEN ER ÅBEN -->
-        <label for="menu-bar">&#9776;</label> <!-- FOR AT VISE MENUPUNKTER -->
-
-        <nav class="navbar"> <!-- NAVBAR BEGYND -->
-            <ul>
-                
-                <li><a href="#">Om Radar</a> <!-- DROPDOWN -->
-                    <ul>
-                        <li><a href="index.html">Historie</a></li>
-                        <li><a href="mission.html">Mission og Vision+</a></li>
-                        <li><a href="index.html">Succeshistorier</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="#">Events</a> <!-- DROPDOWN -->
-                    <ul>
-                        <li><a href="index.html">Kommende events og koncerter</a></li>
-                        <li><a href="index.html">Tidligere events</a></li>
-                        <li><a href="index.html">Specialarrangementer</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="#">Støt Radar</a> <!-- DROPDOWN -->
-                    <ul>
-                        <li><a href="index.html">Crowdfunding</a></li>
-                        <li><a href="index.html">Medlemskab</a></li>
-                        <li><a href="frivillig.html">Frivillige+</a></li>
-                        <li><a href="index.html">Samarbejde</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="#">Fællesskab</a> <!-- DROPDOWN -->
-                    <ul>
-                        <li><a href="heroes.html">Radar Heroes+</a></li>
-                        <li><a href="index.html">Idébank</a></li>
-                    </ul>
-                </li>
-           
-            </ul>
-        </nav> <!-- NAVBAR SLUT -->
-    </section>
+    
+        <!-- Sektion der indeholder logo og navigation -->
+        <section class="headerbyt"> <!-- INDPAKNING AF LOGO -->
+            
+            <!-- Logo med link til forsiden -->
+            <a href="index.html">
+                <img src="image/navbar/radar.logo.webp" alt="Radar-logo-img" class="logo"> <!-- Logo for Radar -->
+            </a>
+    
+            <!-- Checkbox-menu til mobile enheder -->
+            <input type="checkbox" id="menu-bar"> <!-- Checkbox til at kontrollere, om menuen er åben -->
+            <label for="menu-bar">&#9776;</label> <!-- Hamburger-ikon som menu-knap -->
+    
+            <!-- Navigation -->
+            <nav class="navbar"> <!-- NAVBAR BEGYND -->
+                <ul> <!-- Liste over hovedmenupunkter -->
+                    
+                    <!-- Dropdown-menu: Om Radar -->
+                    <li><a href="#">Om Radar</a> <!-- DROPDOWN -->
+                        <ul> <!-- Undermenu -->
+                            <li><a href="index.html">Historie</a></li> <!-- Link til historie -->
+                            <li><a href="mission.html">Mission og Vision+</a></li> <!-- Link til mission og vision -->
+                            <li><a href="index.html">Succeshistorier</a></li> <!-- Link til succeshistorier -->
+                        </ul>
+                    </li>
+                    
+                    <!-- Dropdown-menu: Events -->
+                    <li><a href="#">Events</a> <!-- DROPDOWN -->
+                        <ul> <!-- Undermenu -->
+                            <li><a href="index.html">Kommende events og koncerter</a></li> <!-- Link til kommende events -->
+                            <li><a href="index.html">Tidligere events</a></li> <!-- Link til tidligere events -->
+                            <li><a href="index.html">Specialarrangementer</a></li> <!-- Link til specialarrangementer -->
+                        </ul>
+                    </li>
+                    
+                    <!-- Dropdown-menu: Støt Radar -->
+                    <li><a href="#">Støt Radar</a> <!-- DROPDOWN -->
+                        <ul> <!-- Undermenu -->
+                            <li><a href="index.html">Crowdfunding</a></li> <!-- Link til crowdfunding -->
+                            <li><a href="index.html">Medlemskab</a></li> <!-- Link til medlemskab -->
+                            <li><a href="frivillig.html">Frivillige+</a></li> <!-- Link til frivillige -->
+                            <li><a href="index.html">Samarbejde</a></li> <!-- Link til samarbejde -->
+                        </ul>
+                    </li>
+                    
+                    <!-- Dropdown-menu: Fællesskab -->
+                    <li><a href="#">Fællesskab</a> <!-- DROPDOWN -->
+                        <ul> <!-- Undermenu -->
+                            <li><a href="heroes.html">Radar Heroes+</a></li> <!-- Link til Radar Heroes -->
+                            <li><a href="index.html">Idébank</a></li> <!-- Link til idébank -->
+                        </ul>
+                    </li>
+               
+                </ul>
+            </nav> <!-- NAVBAR SLUT -->
+        </section>
     </header>
 
-    <main>
-    <section class="førstesektion">
-        <section class="image">
-            <img src="image/forside/scenelys.webp" alt="scenelys">
-        </section>
-
-        <section class="billet-køb"> <!-- OVERSIGT OVER KOMMENDE KONCERTER OG BILLETKØB -->
-            <a href="https://www.yourticket.dk/?ytfiltercity=&ytfilterdate=&ytfiltersearch=radar" class="buy-ticket">KØB DIN BILLET HER</a> <!-- DIREKTE LINK TIL BILLETKØB (EKSTERNT) -->
+    <main> <!-- Hovedindholdet på siden -->
+        <section class="førstesektion"> <!-- Første sektion med billede, billetkøb og citat -->
             
-            <h2 class="next-event">NÆSTE BEGIVENHED</h2>
-            
-            <article class="anne-roem">
-                <h3 class="event-name">29/01 ANNA ROEMER</h3>
-                <img src="image/forside/annaroemer.webp" alt="Anna Roemer"/>
-            </article>
+            <!-- Billede af scenelys -->
+            <section class="image">
+                <img src="image/forside/scenelys.webp" alt="scenelys"> <!-- Dekorativt billede, der introducerer sektionen -->
+            </section>
     
-            <ul class="event-liste">
-                <li>31/01 BARYL</li>
-                <li>01/02 AARHUS DRAG EXTRAVAGANZA</li>
-                <li>06/02 GORGEOUS</li>
-                <li>07/02 BUSHBABIES</li>
-                <li>14/02 BISSESVINET</li>
-                <li>15/02 SYL + OMSORG</li>
-            </ul>
+            <!-- Sektion for billetkøb og kommende koncerter -->
+            <section class="billet-køb"> <!-- OVERSIGT OVER KOMMENDE KONCERTER OG BILLETKØB -->
+                <a href="https://www.yourticket.dk/?ytfiltercity=&ytfilterdate=&ytfiltersearch=radar" class="buy-ticket">KØB DIN BILLET HER</a> <!-- Direkte link til billetkøb på en ekstern platform -->
+                
+                <h2 class="next-event">NÆSTE BEGIVENHED</h2> <!-- Overskrift til næste koncert -->
     
-            <a href="https://radarlive.dk/kalender/" class="se-alle-tider">SE ALLE TIDER HER</a> <!-- EKSTERNT LINK TIL ALLE KONCERTER -->
-        </section>
-
-        <article class="femy-quote">
-            <img src="image/forside/femy.webp" alt="femy-gruppebillede">
-            <h2>FEMY: "DET KOMMER TIL AT KUNNE MÆRKES, HVIS RADAR FORSVINDER"</h2>
-            <a href="heroes.html" class="femy-interview">LÆS INTERVIEWET MED FEMY HER</a>
-        </article>
-    </section>
-
-    <section class="alle-kampagner">
-        <section class="kampagne1-2">
-            <article class="frivillig-tilmelding"> <!-- FRIVILLIG TILMELDING -->
-                <img src="image/frivillig/frivillig.webp" alt="frivillig-foto" class="kampagne-billede1">
-            
-                <article>
-                    <h3 class="frivillig-tekst">VÆR MED TIL AT GØRE EN</h3>
-                    <h3 class="frivillig-tekst">FORSKEL - BLIV FRIVILLIG!</h3>
-                    <button onclick="window.location.href='frivillig.html'" class="kampagne-button">TILMELD</button>
+                <!-- Detaljer om den næste begivenhed -->
+                <article class="anne-roem">
+                    <h3 class="event-name">29/01 ANNA ROEMER</h3> <!-- Navn og dato for næste begivenhed -->
+                    <img src="image/forside/annaroemer.webp" alt="Anna Roemer"/> <!-- Billede af kunstneren -->
                 </article>
-            </article>
-            
-            <article class="donation"> <!-- DONATION -->
-                <img src="image/heroes/kunstner1.webp" alt="bar-foto" class="kampagne-billede2">
-                
-                <article>
-                    <h3 class="donation-tekst">HJÆLP MED AT HOLDE</h3>
-                    <h3 class="donation-tekst">LIV I MISSIONEN!</h3>
-                    <button class="kampagne-button">DONÉR</button>
-                </article>
-            </article>
-        </section>
-            
-        <section class="kampagne3">
-            <article class="medie-kampagne"> <!-- HASHTAG KAMPAGNE -->
-                <img src="image/forside/kampagne.webp" alt="koncertfoto" class="kampagne-billede3">
-                
-                <article>
-                    <h3 class="kampagne-tekst">DEL BUDSKABET</h3>
-                    <h3 class="kampagne-tekst1">SOCIALE MEDIER</h3>
-                    <p>BRUG <span class="highlight">#SUPPORTRADAR</span></p>
-                </article>
-            </article>
-        </section>
-    </section>
-
-        <section class="nyhedsbrev-container"> <!-- TILMELDING NYHEDSBREV -->
-            <article class="nyhedsbrev-tekst">
-                <h2>NYHEDSBREV</h2>
-                <p>Modtag nyheder om kommende </p>
-                <p>koncerter, arrangementer og events.</p>
-            </article>
-
-            <form class="email-submit">
-                <input type="email" placeholder="EMAIL" aria-label="Email">
-                <button type="submit">TILMELD</button>
-            </form>
-        </section> 
         
-        <article class="sponsor-container"> <!-- OVERSIGT OVER DE TRE STØRSTE SPONSORER -->
-            <img src="image/forside/sponsor/tuborg.webp" alt="turborg-spons">
-            <img src="image/forside/sponsor/statenskunstfond.webp" alt="staten-spons">
-            <img src="image/forside/sponsor/aarhuskom.webp" alt="aarhus-spons">
-        </article>
+                <!-- Liste over kommende begivenheder -->
+                <ul class="event-liste">
+                    <li>31/01 BARYL</li>
+                    <li>01/02 AARHUS DRAG EXTRAVAGANZA</li>
+                    <li>06/02 GORGEOUS</li>
+                    <li>07/02 BUSHBABIES</li>
+                    <li>14/02 BISSESVINET</li>
+                    <li>15/02 SYL + OMSORG</li>
+                </ul>
+        
+                <a href="https://radarlive.dk/kalender/" class="se-alle-tider">SE ALLE TIDER HER</a> <!-- Link til den fulde koncertkalender -->
+            </section>
+    
+            <!-- Citat og interview med FEMY -->
+            <article class="femy-quote"> <!-- Sektion dedikeret til citat og interview -->
+                <img src="image/forside/femy.webp" alt="femy-gruppebillede"> <!-- Billede af FEMY-gruppen -->
+                <h2>FEMY: "DET KOMMER TIL AT KUNNE MÆRKES, HVIS RADAR FORSVINDER"</h2> <!-- Citat fra FEMY -->
+                <a href="heroes.html" class="femy-interview">LÆS INTERVIEWET MED FEMY HER</a> <!-- Link til interviewartikel -->
+            </article>
+        </section>
     </main>
 
-    <footer>
-            <!-- OVERSIGT OVER KONTAKTMULIGHEDER SAMT ADRESSE -->
+    <section class="alle-kampagner"> <!-- Hovedsektion for alle kampagner -->
+        <section class="kampagne1-2"> <!-- Sektion for de to første kampagner -->
+            
+            <!-- Kampagne 1: Frivillig tilmelding -->
+            <article class="frivillig-tilmelding"> <!-- FRIVILLIG TILMELDING -->
+                <img src="image/frivillig/frivillig.webp" alt="frivillig-foto" class="kampagne-billede1"> <!-- Billede for frivillig tilmelding -->
+            
+                <article> <!-- Tekst og knap til kampagnen -->
+                    <h3 class="frivillig-tekst">VÆR MED TIL AT GØRE EN</h3>
+                    <h3 class="frivillig-tekst">FORSKEL - BLIV FRIVILLIG!</h3>
+                    <button onclick="window.location.href='frivillig.html'" class="kampagne-button">TILMELD</button> <!-- Knap til tilmelding -->
+                </article>
+            </article>
+            
+            <!-- Kampagne 2: Donation -->
+            <article class="donation"> <!-- DONATION -->
+                <img src="image/heroes/kunstner1.webp" alt="bar-foto" class="kampagne-billede2"> <!-- Billede for donationskampagne -->
+                
+                <article> <!-- Tekst og knap til kampagnen -->
+                    <h3 class="donation-tekst">HJÆLP MED AT HOLDE</h3>
+                    <h3 class="donation-tekst">LIV I MISSIONEN!</h3>
+                    <button class="kampagne-button">DONÉR</button> <!-- Knap til donation -->
+                </article>
+            </article>
+        </section>
+            
+        <!-- Kampagne 3: Hashtag kampagne -->
+        <section class="kampagne3"> <!-- Sektion for tredje kampagne -->
+            <article class="medie-kampagne"> <!-- HASHTAG KAMPAGNE -->
+                <img src="image/forside/kampagne.webp" alt="koncertfoto" class="kampagne-billede3"> <!-- Billede for hashtag kampagne -->
+                
+                <article> <!-- Tekst og instruktioner -->
+                    <h3 class="kampagne-tekst">DEL BUDSKABET</h3>
+                    <h3 class="kampagne-tekst1">SOCIALE MEDIER</h3>
+                    <p>BRUG <span class="highlight">#SUPPORTRADAR</span></p> <!-- Hashtag highlight -->
+                </article>
+            </article>
+        </section>
+    </section>
+    
+    <!-- Nyhedsbrev tilmelding -->
+    <section class="nyhedsbrev-container"> <!-- TILMELDING NYHEDSBREV -->
+        <article class="nyhedsbrev-tekst"> <!-- Tekst for nyhedsbrev -->
+            <h2>NYHEDSBREV</h2>
+            <p>Modtag nyheder om kommende </p>
+            <p>koncerter, arrangementer og events.</p>
+        </article>
+    
+        <form class="email-submit"> <!-- Formular til tilmelding -->
+            <input type="email" placeholder="EMAIL" aria-label="Email"> <!-- Inputfelt for email -->
+            <button type="submit">TILMELD</button> <!-- Tilmeld knap -->
+        </form>
+    </section> 
+    
+    <!-- Sponsorsektion -->
+    <article class="sponsor-container"> <!-- OVERSIGT OVER DE TRE STØRSTE SPONSORER -->
+        <img src="image/forside/sponsor/tuborg.webp" alt="turborg-spons"> <!-- Sponsor Tuborg -->
+        <img src="image/forside/sponsor/statenskunstfond.webp" alt="staten-spons"> <!-- Sponsor Statens Kunstfond -->
+        <img src="image/forside/sponsor/aarhuskom.webp" alt="aarhus-spons"> <!-- Sponsor Aarhus Kommune -->
+    </article>
+    
+    <footer> <!-- Sidefod -->
+        <!-- Kontaktoplysninger -->
         <article class="footer-kontakt">
             <article class="kontakt">
-                <a href="https://maps.app.goo.gl/uQbbWJaSaAvCWsMn6">
+                <a href="https://maps.app.goo.gl/uQbbWJaSaAvCWsMn6"> <!-- Adresse med link til Google Maps -->
                 Karen Wegeners Gade 6<br>
                 DK 8000 Aarhus C
                 </a>
                 <br>
-                Telefon <a href="tel:+4586760344">+45 8676 0344</a><br>
-                Kontakt: <a href="mailto:kontakt@radarlive.dk">kontakt@radarlive.dk</a><br>
-                Bookingforespørgsler: <a href="mailto:booking@radarlive.dk">booking@radarlive.dk</a>
+                Telefon <a href="tel:+4586760344">+45 8676 0344</a><br> <!-- Telefonnummer med link -->
+                Kontakt: <a href="mailto:kontakt@radarlive.dk">kontakt@radarlive.dk</a><br> <!-- Email til kontakt -->
+                Bookingforespørgsler: <a href="mailto:booking@radarlive.dk">booking@radarlive.dk</a> <!-- Email til booking -->
             </article>
         </article>
         
-        <!-- <article class="footer-andet"> -->
-
-        <!-- OVERSIGT OVER SOCIALE MEDIER -->
+        <!-- Links til andre sider -->
         <article class="footer-container">
              <article class="andet">
                 <a href="index.html" class="nyhedsbrev">NYHEDSBREV</a>
                 <a href="index.html" class="vilkaar">VILKÅR & BETINGELSER</a>
                 <a href="index.html" class="faq">FAQ</a> 
             </article>
+    
+            <!-- Sociale medier links -->
             <article class="socials">
-                <!-- FØLGENDE LINKS VIRKER OG FØRER VIDERE TIL EKSTERNE SIDER -->
+                <!-- Sociale medie ikoner med links -->
                 <span class="footer-icon"><a href="https://www.facebook.com/radarlive">
                     <img src="image/footer/facebook.icon.webp" alt="Facebook logo" class="footerlogo" aria-label="Gå til Facebook"></a></span>
                 <span class="footer-icon"><a href="https://www.instagram.com/radarlive/">
@@ -204,5 +226,6 @@
             </article>
         </article>
     </footer>
+
 </body>
 </html>
