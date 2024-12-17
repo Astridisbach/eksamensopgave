@@ -57,8 +57,12 @@ main {
 /* STYLING AF BANNER-BILLEDE */
 /* Justerer bannerbilledets bredde */
 .banner-img {
-    width: 50%; /* Billedet fylder halvdelen af sin container */
+    width: 40%; /* Billedet fylder halvdelen af sin container */
     /* Overvej at centrere billedet eller gøre det responsivt, hvis skærmstørrelsen varierer */
+}
+
+.banner-img img{
+    width: 100%; 
 }
 
 /* STYLING AF BILLEDET UNDER NAVBAR */
@@ -205,67 +209,6 @@ main {
     color: #3d3570; /* Mørkere lilla farve, når musen holdes over */
 }
 
-/* KAMPAGNER FORSIDE */
-/* Styling af "alle-kampagner" container */
-/* Flexbox layout med mellemrum og padding til kampagneindhold */
-.alle-kampagner {
-    display: flex; /* Gør containeren til en flexbox */
-    overflow: hidden; /* Skjuler indhold, der overskrider containerens bredde/højde */
-    margin-top: 12rem; /* Stor afstand fra toppen */
-    padding: 2.5rem; /* Polstring rundt om containeren */
-    gap: 15%; /* Mellemrum mellem flex-elementer */
-}
-
-/* Styling af "kampagne1-2" */
-/* Kolonne-layout med mellemrum og justering mellem artikler */
-.kampagne1-2 {
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Arrangerer børnene i en lodret kolonne */
-    width: 60%; /* Containeren fylder 60% af den overordnede bredde */
-    gap: 2rem; /* Mellemrum mellem børnene */
-    justify-content: space-between; /* Placerer børnene med lige meget plads imellem */
-}
-
-/* Styling af artikler inde i "kampagne1-2" */
-/* Giver artiklerne en fast højde og afrundede hjørner */
-.kampagne1-2 article {
-    border-radius: 8px; /* Afrunder hjørnerne med 8px */
-    height: 16rem; /* Fast højde på 16rem */
-}
-
-/* Styling af "kampagne3" container */
-/* Placerer kampagne 3 i en mindre boks med baggrundsfarve */
-.kampagne3 {
-    display: flex; /* Flexbox layout */
-    width: 25%; /* Containeren fylder 25% af den overordnede bredde */
-    background-color: #a9b4df; /* Lys blå baggrundsfarve */
-    border-radius: 8px; /* Afrunder hjørnerne med 8px */
-}
-
-/* STYLING AF BILLEDER TIL KAMPAGNER */
-
-/* Styling af første kampagnebillede */
-/* Giver en fast bredde, højde og afrundede hjørner */
-.kampagne-billede1 {
-    width: 60%; /* Billedet fylder 60% af sin container */
-    height: 16rem; /* Fast højde på 16rem */
-    border-radius: 8px; /* Afrunder billedets hjørner med 8px */
-}
-
-/* Styling af andet kampagnebillede */
-/* Identisk styling som det første kampagnebillede */
-.kampagne-billede2 {
-    width: 60%; /* Billedet fylder 60% af sin container */
-    height: 16rem; /* Fast højde på 16rem */
-    border-radius: 8px; /* Afrunder billedets hjørner med 8px */
-}
-
-/* Styling af tredje kampagnebillede */
-/* Fylder hele bredden af containeren med afrundede hjørner */
-.kampagne-billede3 {
-    width: 100%; /* Billedet fylder hele containerens bredde */
-    border-radius: 8px; /* Afrunder billedets hjørner med 8px */
-}
 
 /* STYLING AF "FRIVILLIG-TILMELDING" SEKTION */
 
@@ -381,6 +324,237 @@ form button:hover {
     height: 90px; /* Sætter højden på billederne til 90px */
     margin: 0; /* Fjerner margin omkring billederne */
 }
+
+/* ARTIKLER OG KAMPAGNER */
+/* Stil for citat-sektionen i artikler */
+.femy-quote {
+    margin-top: 0; /* Fjerner top-marginen for at undgå ekstra plads ovenfor */
+    margin-left: 0; /* Fjerner venstre-marginen */
+    padding-left: 26rem;
+}
+
+/* Stil for billeder i femy-quote-sektionen */
+.femy-quote img {
+    max-width: 90%; /* Sætter den maksimale bredde på billedet til 90% af forælderen */
+    height: auto; /* Bevarer billedets proportioner ved at justere højden automatisk */
+    margin-top: 4rem; /* Tilføjer margin øverst for at give plads over billedet */
+    margin-right: -0.6rem; /* Tilføjer en lille negativ margin til højre for at justere placeringen */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
+}
+
+/* Stil for overskriften (h2) i femy-quote-sektionen */
+.femy-quote h2 {
+    font-size: 24px; /* Sætter skriftstørrelsen til 24px */
+    margin-top: 20px; /* Tilføjer margin øverst for at give plads mellem overskriften og andre elementer */
+    color: white; /* Sætter farven på overskriften til hvid */
+}
+
+/* Stil for linket i femy-interview-sektionen */
+.femy-interview {
+    color: #5e4795; /* Sætter tekstfarven til en mørk lilla */
+    text-decoration: none; /* Fjerner understregning fra linket */
+}
+
+/* Stil for linket, når der er hover-effekt */
+.femy-interview:hover {
+    color: #3d3570; /* Ændrer linkets farve til en mørkere lilla, når musen er over det */
+}
+
+/* KAMPAGNER FORSIDE */
+/* Stil for alle kampagner container */
+.alle-kampagner {
+    display: flex; /* Bruger flexbox for at arrangere elementerne horisontalt */
+    flex-direction: row; /* Arrangerer indholdet i en kolonne */
+    overflow: hidden; /* Skjuler indhold, der strækker sig ud over containeren */
+    margin-top: 5rem; /* Tilføjer margin øverst på containeren */
+    padding: 2.5rem; /* Tilføjer padding omkring containeren for at give lidt plads */
+    gap: 2rem; /* Skaber et mellemrum på 15% mellem hvert element i containeren */
+}
+
+/* Stil for kampagne-sektioner 1-2 og 3 */
+.kampagne1-2,
+.kampagne3 {
+    display: flex; /* Bruger flexbox til at arrangere elementerne */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    width: 100%; /* Sætter bredden til 100% af forælderen */
+    gap: 2rem; /* Tilføjer mellemrum mellem hvert element */
+    justify-content: space-between; /* Fordeler elementerne jævnt med plads imellem dem */
+    margin-top: 1rem; /* Tilføjer margin øverst for at adskille sektionerne */
+}
+
+
+/* Medie-kampagne sektion */
+.medie-kampagne {
+    display: flex; /* Bruger flexbox for at arrangere elementer i horisontal retning */
+    background-color: #a9b4df; /* Sætter baggrundsfarven til en lyseblå-lilla */
+    border-radius: 8px; /* Runder hjørnerne af containeren */
+    align-content: center; /* Centrerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet på tværs af akse (horisontalt) */
+    justify-content: flex-start; /* Justerer indholdet til at starte fra venstre */
+    flex-direction: column;
+}
+
+/* Artikel-indhold i medie-kampagne sektion */
+.medie-kampagne article {
+    padding: 0.7rem; /* Tilføjer padding på 0.7rem rundt om indholdet */
+    display: flex; /* Bruger flexbox til at arrangere indholdet i artiklen */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    align-content: center; /* Centrerer indholdet i forhold til containeren */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    margin-left: 1.2rem; /* Tilføjer margin til venstre for at skabe lidt afstand mellem elementerne */
+}
+ 
+/* Stil for kampagne 1-2 sektion */
+.kampagne1-2 article {
+    border-radius: 8px; /* Runder hjørnerne af artiklen */
+    height: 45%; /* Sætter højden på artiklen til 16rem */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Stil for første billede i kampagnen */
+.kampagne-billede1 {
+    width: 50%; /* Sætter bredden til 50% af forælderen */
+    height: 100%; /* Sætter højden til 16rem */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
+}
+
+/* Stil for andet billede i kampagnen */
+.kampagne-billede2 {
+    width: 50%; /* Sætter bredden til 50% af forælderen */
+    height: 100%; /* Sætter højden til 16rem */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
+}
+
+/* Stil for tredje billede i kampagnen */
+.kampagne-billede3 {
+    width: 100%; /* Sætter bredden til 50% af forælderen */
+    border-radius: 8px; /* Runder hjørnerne af billedet */
+}
+
+/* Frivillig tilmelding sektion */
+.frivillig-tilmelding {
+    display: flex; /* Bruger flexbox til at arrangere elementerne horisontalt */
+    background-color: #a9b4df; /* Sætter baggrundsfarven til en lyseblå-lilla */
+}
+
+/* Artikel-indhold i frivillig tilmelding sektion */
+.frivillig-tilmelding article {
+    display: flex; /* Bruger flexbox til at arrangere indholdet */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    width: 50%; /* Sætter bredden af artiklen til 50% af forælderen */
+}
+
+/* Donation-sektionen */
+.donation {
+    display: flex; /* Bruger flexbox til at layout'e elementerne horisontalt */
+    background-color: #a9b4df; /* Sætter baggrundsfarven til en lys lilla */
+    border-radius: 8px; /* Runder hjørnerne af containeren */
+}
+
+/* Artikel-indhold i donation-sektionen */
+.donation article {
+    display: flex; /* Bruger flexbox til at arrangere indholdet i artiklen */
+    flex-direction: column; /* Arrangerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    width: 50%; /* Sætter bredden af artiklen til 50% af forælderen */
+}
+
+/* Stil for medie-kampagne artikel */
+.medie-kampagne article {
+    padding: 0.7rem; /* Tilføjer padding på 0.7rem omkring artiklen */
+}
+
+/* Stil for tekst i kampagne-sektionen */
+.kampagne-tekst1 {
+    font-size: 1.4rem; /* Sætter skriftstørrelsen på teksten i kampagnen til 1.4rem */
+}
+
+/* Stil for knappen i kampagnen */
+.kampagne-button {
+    background-color: #594891; /* Sætter baggrundsfarven på knappen til en mørk lilla */
+    color: white; /* Sætter tekstfarven på knappen til hvid */
+    font-size: 1.1rem; /* Sætter skriftstørrelsen på knappen til 1.1rem */
+    padding: 0.1rem 2.8rem; /* Tilføjer padding på top/bund og venstre/højre for at gøre knappen større */
+    margin-top: 1.3rem; /* Tilføjer margin øverst på knappen */
+    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen 'Jockey One' til teksten på knappen */
+    border-radius: 8px; /* Runder hjørnerne af knappen */
+    border: none; /* Fjerner kantlinjen fra knappen */
+    cursor: pointer; /* Ændrer musemarkøren til en hånd, når man holder musen over knappen */
+}
+
+/* NYHEDSBREV - Container for nyhedsbrev */
+.nyhedsbrev-container {
+    background: linear-gradient(to bottom, #a9b4df, #848484, #a9b4df); /* Opretter en baggrundsfarve med en gradient fra top til bund */
+    padding: 2rem; /* Lægger polstring omkring containeren */
+    margin-top: 2rem; /* Lægger afstand øverst på containeren */
+    width: 100%; /* Gør containeren bred nok til at fylde hele bredden */
+}
+
+/* NYHEDSBREV - Overskrift */
+.nyhedsbrev-tekst h2 {
+    font-size: 2rem; /* Sætter skriftstørrelsen for overskriften i nyhedsbrevet */
+}
+
+/* NYHEDSBREV - Tekstindstillinger */
+.nyhedsbrev-tekst h2 {
+    font-size: 2rem; /* Sætter skriftstørrelsen for overskriften i nyhedsbrevet */
+}
+
+.nyhedsbrev-tekst p {
+    font-size: 1.5rem; /* Sætter skriftstørrelsen for brødteksten i nyhedsbrevet */
+}
+
+/* Formular inputfelt for email */
+form input[type="email"] {
+    padding: 10px; /* Lægger polstring omkring inputfeltet */
+    border-radius: 5px; /* Rundede hjørner på inputfeltet */
+    border: 1px solid #5e4795; /* Lægger en kant med farven #5e4795 */
+    font-size: 16px; /* Sætter skriftstørrelsen for teksten i inputfeltet */
+    margin-right: 10px; /* Lægger afstand til højre for inputfeltet */
+}
+
+/* Knap til at sende formularen */
+form button {
+    background-color: #5e4795; /* Sætter baggrundsfarven på knappen */
+    color: white; /* Sætter tekstfarven på knappen til hvid */
+    padding: 10px 20px; /* Lægger polstring omkring knappen */
+    border: none; /* Fjern kantlinje */
+    border-radius: 5px; /* Rundede hjørner på knappen */
+    cursor: pointer; /* Ændrer musens markør til en hånd, når den er over knappen */
+}
+
+/* Hover-effekt for knappen */
+form button:hover {
+    background-color: #3d3570; /* Ændrer baggrundsfarven, når musen er over knappen */
+}
+
+/* Klassen for email-submit-knap */
+.email-submit {
+    padding: 1.6rem; /* Lægger ekstra polstring omkring submit-knappen */
+}
+
+/* SPONSOR-OVERSIGT */
+.sponsor-container {
+    display: flex; /* Gør sponsor-containeren til et flex-container */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    padding: 1.6rem; /* Giver indvendig afstand på 1.6rem omkring containerens indhold */
+    flex-direction: column; /* Lægger indholdet i en kolonne (vertikalt) */
+    align-items: center; /* Centrerer indholdet på tværs af containerens hovedakse */
+    gap: 0px; /* Der er ingen afstand mellem børnene i containeren */
+}
+
+.sponsor-container img {
+    max-width: 90%; /* Billedets bredde kan være op til 90% af containerens bredde */
+    height: 90px; /* Billedets højde sættes til 90px */
+    margin: 0; /* Fjern eventuelle marginer omkring billedet */
+}
+
 
 /* RESPONSIVE DESIGN */
 
@@ -542,231 +716,128 @@ form button:hover {
         font-size: 1.1rem; /* Lidt mindre skriftstørrelse */
         text-decoration: none; /* Fjerner underline */
     }
-}
 
-/* ARTIKLER OG KAMPAGNER */
-/* Stil for citat-sektionen i artikler */
-.femy-quote {
-    margin-top: 0; /* Fjerner top-marginen for at undgå ekstra plads ovenfor */
-    margin-left: 0; /* Fjerner venstre-marginen */
-}
+    .medie-kampagne article {
+        padding-left: 5rem;
+    }
 
-/* Stil for billeder i femy-quote-sektionen */
-.femy-quote img {
-    max-width: 90%; /* Sætter den maksimale bredde på billedet til 90% af forælderen */
-    height: auto; /* Bevarer billedets proportioner ved at justere højden automatisk */
-    margin-top: 4rem; /* Tilføjer margin øverst for at give plads over billedet */
-    margin-right: -0.6rem; /* Tilføjer en lille negativ margin til højre for at justere placeringen */
-    border-radius: 8px; /* Runder hjørnerne af billedet */
-}
-
-/* Stil for overskriften (h2) i femy-quote-sektionen */
-.femy-quote h2 {
-    font-size: 24px; /* Sætter skriftstørrelsen til 24px */
-    margin-top: 20px; /* Tilføjer margin øverst for at give plads mellem overskriften og andre elementer */
-    color: white; /* Sætter farven på overskriften til hvid */
-}
-
-/* Stil for linket i femy-interview-sektionen */
-.femy-interview {
-    color: #5e4795; /* Sætter tekstfarven til en mørk lilla */
-    text-decoration: none; /* Fjerner understregning fra linket */
-}
-
-/* Stil for linket, når der er hover-effekt */
-.femy-interview:hover {
-    color: #3d3570; /* Ændrer linkets farve til en mørkere lilla, når musen er over det */
-}
-
-/* KAMPAGNER FORSIDE */
-
-/* Stil for alle kampagner container */
+    /* KAMPAGNER FORSIDE */
 .alle-kampagner {
-    display: flex; /* Bruger flexbox for at arrangere elementerne horisontalt */
-    flex-direction: column; /* Arrangerer indholdet i en kolonne */
-    overflow: hidden; /* Skjuler indhold, der strækker sig ud over containeren */
-    margin-top: 2rem; /* Tilføjer margin øverst på containeren */
-    padding: 2.5rem; /* Tilføjer padding omkring containeren for at give lidt plads */
-    gap: 15%; /* Skaber et mellemrum på 15% mellem hvert element i containeren */
+    display: flex; /* Aktiverer fleksibel layout for kampagnerne */
+    flex-direction: column; /* Arrangerer kampagnerne vertikalt */
+    overflow: hidden; /* Skjuler eventuelt overskydende indhold */
+    margin-top: 2rem; /* Tilføjer margin øverst */
+    padding: 2.5rem; /* Tilføjer padding omkring containeren */
+    gap: 15%; /* Tilføjer afstand mellem elementerne */
+    align-items: center;
 }
 
-/* Stil for kampagne-sektioner 1-2 og 3 */
 .kampagne1-2,
 .kampagne3 {
-    display: flex; /* Bruger flexbox til at arrangere elementerne */
-    flex-direction: column; /* Arrangerer indholdet vertikalt */
-    width: 100%; /* Sætter bredden til 100% af forælderen */
-    gap: 2rem; /* Tilføjer mellemrum mellem hvert element */
-    justify-content: space-between; /* Fordeler elementerne jævnt med plads imellem dem */
-    margin-top: 1rem; /* Tilføjer margin øverst for at adskille sektionerne */
+    display: flex; /* Aktiverer fleksibel layout for kampagnerne */
+    flex-direction: column; /* Arrangerer kampagnerne vertikalt */
+    width: 100%; /* Sætter bredden til 100% af containerens bredde */
+    gap: 2rem; /* Tilføjer afstand mellem kampagnerne */
+    justify-content: space-between; /* Fordeler kampagnerne jævnt */
+    margin-top: 1rem; /* Tilføjer margin øverst */
 }
 
-/* Medie-kampagne sektion */
+
+/* MEDIE-KAMPAGNE */
 .medie-kampagne {
-    display: flex; /* Bruger flexbox for at arrangere elementer i horisontal retning */
-    background-color: #a9b4df; /* Sætter baggrundsfarven til en lyseblå-lilla */
+    display: flex; /* Aktiverer fleksibel layout på containeren */
+    background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
     border-radius: 8px; /* Runder hjørnerne af containeren */
-    align-content: center; /* Centrerer indholdet vertikalt */
-    align-items: center; /* Centrerer indholdet på tværs af akse (horisontalt) */
-    justify-content: flex-start; /* Justerer indholdet til at starte fra venstre */
+    align-content: center; /* Centrerer indholdet vertikalt, hvis der er flere rækker */
+    align-items: center; /* Centrerer indholdet horisontalt i containeren */
+    justify-content: flex-start; /* Justerer indholdet mod starten af containeren (venstre side) */
+    flex-direction: row;
 }
 
-/* Artikel-indhold i medie-kampagne sektion */
 .medie-kampagne article {
-    padding: 0.7rem; /* Tilføjer padding på 0.7rem rundt om indholdet */
-    display: flex; /* Bruger flexbox til at arrangere indholdet i artiklen */
-    flex-direction: column; /* Arrangerer indholdet vertikalt */
-    align-content: center; /* Centrerer indholdet i forhold til containeren */
-    justify-content: center; /* Centrerer indholdet vertikalt */
-    align-items: center; /* Centrerer indholdet horisontalt */
-    margin-left: 1.2rem; /* Tilføjer margin til venstre for at skabe lidt afstand mellem elementerne */
+    padding: 0.7rem; /* Tilføjer padding omkring indholdet i article */
+    display: flex; /* Aktiverer fleksibel layout inde i article */
+    flex-direction: column; /* Arrangerer børneelementer vertikalt */
+    align-content: center; /* Centrerer indholdet vertikalt inden i article */
+    justify-content: center; /* Centrerer indholdet vertikalt inde i article */
+    align-items: center; /* Centrerer indholdet horisontalt inde i article */
+    margin-left: 0; /* Tilføjer margin til venstre for at skabe afstand til andre elementer */
+    padding-left: 2rem;
 }
 
-/* Stil for kampagne 1-2 sektion */
 .kampagne1-2 article {
-    border-radius: 8px; /* Runder hjørnerne af artiklen */
-    height: 16rem; /* Sætter højden på artiklen til 16rem */
+    border-radius: 8px; /* Runder hjørnerne af article */
+    height: 16rem; /* Sætter højden af article til 16rem */
 }
 
-/* Stil for første billede i kampagnen */
+/* KAMPAGNE-BILLEDE STYLES */
 .kampagne-billede1 {
-    width: 50%; /* Sætter bredden til 50% af forælderen */
-    height: 16rem; /* Sætter højden til 16rem */
+    width: 50%; /* Sætter bredden på billedet til 50% af containerens bredde */
+    height: 16rem; /* Sætter højden på billedet til 16rem */
     border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
-/* Stil for andet billede i kampagnen */
 .kampagne-billede2 {
-    width: 50%; /* Sætter bredden til 50% af forælderen */
-    height: 16rem; /* Sætter højden til 16rem */
+    width: 50%; /* Sætter bredden på billedet til 50% af containerens bredde */
+    height: 16rem; /* Sætter højden på billedet til 16rem */
     border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
-/* Stil for tredje billede i kampagnen */
 .kampagne-billede3 {
-    width: 50%; /* Sætter bredden til 50% af forælderen */
+    width: 50%; /* Sætter bredden på billedet til 50% af containerens bredde */
     border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
-/* Frivillig tilmelding sektion */
+/* FRIVILLIG TILMELDING */
 .frivillig-tilmelding {
-    display: flex; /* Bruger flexbox til at arrangere elementerne horisontalt */
-    background-color: #a9b4df; /* Sætter baggrundsfarven til en lyseblå-lilla */
+    display: flex; /* Aktiverer fleksibel layout på frivillig tilmelding container */
+    background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
 }
 
-/* Artikel-indhold i frivillig tilmelding sektion */
 .frivillig-tilmelding article {
-    display: flex; /* Bruger flexbox til at arrangere indholdet */
-    flex-direction: column; /* Arrangerer indholdet vertikalt */
-    align-items: center; /* Centrerer indholdet horisontalt */
-    justify-content: center; /* Centrerer indholdet vertikalt */
-    width: 50%; /* Sætter bredden af artiklen til 50% af forælderen */
+    display: flex; /* Aktiverer fleksibel layout inde i article */
+    flex-direction: column; /* Arrangerer børnelementer vertikalt */
+    align-items: center; /* Centrerer børneelementer horisontalt */
+    justify-content: center; /* Centrerer børneelementer vertikalt */
+    width: 50%; /* Sætter bredden af article til 50% af containerens bredde */
 }
 
-/* Donation-sektionen */
+/* DONATION */
 .donation {
-    display: flex; /* Bruger flexbox til at layout'e elementerne horisontalt */
-    background-color: #a9b4df; /* Sætter baggrundsfarven til en lys lilla */
-    border-radius: 8px; /* Runder hjørnerne af containeren */
+    display: flex; /* Aktiverer fleksibel layout på donation container */
+    background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
+    border-radius: 8px; /* Runder hjørnerne af donation containeren */
 }
 
-/* Artikel-indhold i donation-sektionen */
 .donation article {
-    display: flex; /* Bruger flexbox til at arrangere indholdet i artiklen */
-    flex-direction: column; /* Arrangerer indholdet vertikalt */
-    align-items: center; /* Centrerer indholdet horisontalt */
-    justify-content: center; /* Centrerer indholdet vertikalt */
-    width: 50%; /* Sætter bredden af artiklen til 50% af forælderen */
+    display: flex; /* Aktiverer fleksibel layout inde i article */
+    flex-direction: column; /* Arrangerer børneelementer vertikalt */
+    align-items: center; /* Centrerer børneelementer horisontalt */
+    justify-content: center; /* Centrerer børneelementer vertikalt */
+    width: 50%; /* Sætter bredden af article til 50% af containerens bredde */
 }
 
-/* Stil for medie-kampagne artikel */
-.medie-kampagne article {
-    padding: 0.7rem; /* Tilføjer padding på 0.7rem omkring artiklen */
-}
-
-/* Stil for tekst i kampagne-sektionen */
+/* KAMPAGNE-TEKST */
 .kampagne-tekst1 {
-    font-size: 1.4rem; /* Sætter skriftstørrelsen på teksten i kampagnen til 1.4rem */
+    font-size: 1.4rem; /* Sætter skriftstørrelsen til 1.4rem for kampagne teksten */
 }
 
-/* Stil for knappen i kampagnen */
+/* KAMPAGNE-BUTTON */
 .kampagne-button {
     background-color: #594891; /* Sætter baggrundsfarven på knappen til en mørk lilla */
     color: white; /* Sætter tekstfarven på knappen til hvid */
     font-size: 1.1rem; /* Sætter skriftstørrelsen på knappen til 1.1rem */
-    padding: 0.1rem 2.8rem; /* Tilføjer padding på top/bund og venstre/højre for at gøre knappen større */
-    margin-top: 1.3rem; /* Tilføjer margin øverst på knappen */
-    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen 'Jockey One' til teksten på knappen */
+    padding: 0.1rem 2.8rem; /* Tilføjer padding inde i knappen (top/bund: 0.1rem, venstre/højre: 2.8rem) */
+    margin-top: 1.3rem; /* Tilføjer margin øverst på knappen for at skabe afstand til elementet over */
+    font-family: 'Jockey One', sans-serif; /* Sætter skrifttypen til 'Jockey One' med fallback til sans-serif */
     border-radius: 8px; /* Runder hjørnerne af knappen */
-    border: none; /* Fjerner kantlinjen fra knappen */
-    cursor: pointer; /* Ændrer musemarkøren til en hånd, når man holder musen over knappen */
+    border: none; /* Fjerner standardkanten på knappen */
+    cursor: pointer; /* Ændrer musemarkøren til en pegefinger, når man holder musen over knappen */
 }
 
-/* NYHEDSBREV - Container for nyhedsbrev */
-.nyhedsbrev-container {
-    background: linear-gradient(to bottom, #a9b4df, #848484, #a9b4df); /* Opretter en baggrundsfarve med en gradient fra top til bund */
-    padding: 2rem; /* Lægger polstring omkring containeren */
-    margin-top: 2rem; /* Lægger afstand øverst på containeren */
-    width: 100%; /* Gør containeren bred nok til at fylde hele bredden */
-}
-
-/* NYHEDSBREV - Overskrift */
-.nyhedsbrev-tekst h2 {
-    font-size: 2rem; /* Sætter skriftstørrelsen for overskriften i nyhedsbrevet */
-}
-
-/* NYHEDSBREV - Tekstindstillinger */
-.nyhedsbrev-tekst h2 {
-    font-size: 2rem; /* Sætter skriftstørrelsen for overskriften i nyhedsbrevet */
-}
-
-.nyhedsbrev-tekst p {
-    font-size: 1.5rem; /* Sætter skriftstørrelsen for brødteksten i nyhedsbrevet */
-}
-
-/* Formular inputfelt for email */
-form input[type="email"] {
-    padding: 10px; /* Lægger polstring omkring inputfeltet */
-    border-radius: 5px; /* Rundede hjørner på inputfeltet */
-    border: 1px solid #5e4795; /* Lægger en kant med farven #5e4795 */
-    font-size: 16px; /* Sætter skriftstørrelsen for teksten i inputfeltet */
-    margin-right: 10px; /* Lægger afstand til højre for inputfeltet */
-}
-
-/* Knap til at sende formularen */
-form button {
-    background-color: #5e4795; /* Sætter baggrundsfarven på knappen */
-    color: white; /* Sætter tekstfarven på knappen til hvid */
-    padding: 10px 20px; /* Lægger polstring omkring knappen */
-    border: none; /* Fjern kantlinje */
-    border-radius: 5px; /* Rundede hjørner på knappen */
-    cursor: pointer; /* Ændrer musens markør til en hånd, når den er over knappen */
-}
-
-/* Hover-effekt for knappen */
-form button:hover {
-    background-color: #3d3570; /* Ændrer baggrundsfarven, når musen er over knappen */
-}
-
-/* Klassen for email-submit-knap */
-.email-submit {
-    padding: 1.6rem; /* Lægger ekstra polstring omkring submit-knappen */
-}
-
-/* SPONSOR-OVERSIGT */
-.sponsor-container {
-    display: flex; /* Gør sponsor-containeren til et flex-container */
-    justify-content: center; /* Centrerer indholdet horisontalt */
-    padding: 1.6rem; /* Giver indvendig afstand på 1.6rem omkring containerens indhold */
-    flex-direction: column; /* Lægger indholdet i en kolonne (vertikalt) */
-    align-items: center; /* Centrerer indholdet på tværs af containerens hovedakse */
-    gap: 0px; /* Der er ingen afstand mellem børnene i containeren */
-}
-
-.sponsor-container img {
-    max-width: 90%; /* Billedets bredde kan være op til 90% af containerens bredde */
-    height: 90px; /* Billedets højde sættes til 90px */
-    margin: 0; /* Fjern eventuelle marginer omkring billedet */
+    .femy-quote {
+        padding-left: 0rem;
+    }
 }
 
 /* TABLET */ 
@@ -825,7 +896,7 @@ form button:hover {
 /* KONCERT-OVERSIGT */
 .billet-køb {
     width: 66%; /* Sætter bredden af billet-køb containeren til 66% af dens forælder */
-    height: 36rem; /* Sætter højden af billet-køb containeren til 36rem */
+    height: 45rem; /* Sætter højden af billet-køb containeren til 36rem */
     background-color: #a9b4df; /* Sætter en lys lilla baggrundsfarve */
     padding: 0.1rem 0rem; /* Tilføjer lidt padding på top/bund, men ingen på venstre/højre */
     border-radius: 8px; /* Runder hjørnerne af containeren */
@@ -896,6 +967,7 @@ form button:hover {
 .femy-quote {
     margin-top: 0; /* Fjerner margin øverst */
     margin-left: 0; /* Fjerner margin til venstre */
+    padding-left: 0;
 }
 
 .femy-quote img {
@@ -929,6 +1001,7 @@ form button:hover {
     margin-top: 2rem; /* Tilføjer margin øverst */
     padding: 2.5rem; /* Tilføjer padding omkring containeren */
     gap: 15%; /* Tilføjer afstand mellem elementerne */
+    align-items: center;
 }
 
 .kampagne1-2,
@@ -941,6 +1014,8 @@ form button:hover {
     margin-top: 1rem; /* Tilføjer margin øverst */
 }
 
+
+
 /* MEDIE-KAMPAGNE */
 .medie-kampagne {
     display: flex; /* Aktiverer fleksibel layout på containeren */
@@ -949,6 +1024,7 @@ form button:hover {
     align-content: center; /* Centrerer indholdet vertikalt, hvis der er flere rækker */
     align-items: center; /* Centrerer indholdet horisontalt i containeren */
     justify-content: flex-start; /* Justerer indholdet mod starten af containeren (venstre side) */
+    flex-direction: row;
 }
 
 .medie-kampagne article {
@@ -958,7 +1034,8 @@ form button:hover {
     align-content: center; /* Centrerer indholdet vertikalt inden i article */
     justify-content: center; /* Centrerer indholdet vertikalt inde i article */
     align-items: center; /* Centrerer indholdet horisontalt inde i article */
-    margin-left: 5.9rem; /* Tilføjer margin til venstre for at skabe afstand til andre elementer */
+    margin-left: 0; /* Tilføjer margin til venstre for at skabe afstand til andre elementer */
+    padding-left: 7rem;
 }
 
 .kampagne1-2 article {
@@ -1011,10 +1088,6 @@ form button:hover {
     align-items: center; /* Centrerer børneelementer horisontalt */
     justify-content: center; /* Centrerer børneelementer vertikalt */
     width: 50%; /* Sætter bredden af article til 50% af containerens bredde */
-}
-
-.medie-kampagne article {
-    padding: 0.7rem; /* Tilføjer padding omkring indholdet i article */
 }
 
 /* KAMPAGNE-TEKST */

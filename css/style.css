@@ -38,77 +38,95 @@ body {
     max-height: 100px; /* Begrænser højden på logoet */
 }
 
+.logo {
+    width: 10.7rem;
+}
+
 /* Header styling */
 header {
     display: flex; /* Bruger Flexbox for at arrangere header-indholdet */
     justify-content: space-between; /* Skubber elementerne til hver sin side af headeren */
 }
 
-/* NAVBAR STIL */
-/* Navbar-containeren bruger Flexbox til at arrangere indholdet */
-.navbar {
-    display: flex; /* Bruger Flexbox for at arrangere navbar-elementerne */
-    justify-content: space-between; /* Fordeler pladsen mellem navbar-elementerne */
-    align-items: center; /* Centrerer elementerne vertikalt i navbaren */
+.headerbyt {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-/* Styling af navbar-liste */
-.navbar ul {
-    list-style: none; /* Fjerner standard punktmærker fra listen */
-    display: flex; /* Bruger Flexbox til at arrangere liste-elementerne horisontalt */
-    padding: 0; /* Fjerner padding */
-    margin: 0; /* Fjerner margin */
-    font-size: 0.9rem; /* Sætter skrifttypestørrelsen for liste-elementerne */
-}
+/* navbar */
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #a9b4df;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    z-index: 99;
+    
+ }
 
-/* Styling af navbar liste-items */
-.navbar li {
-    position: relative; /* Sikrer, at der kan placeres dropdown-menuer relativt til liste-elementerne */
-    padding: 10px; /* Tilføjer padding rundt om hvert liste-item */
-}
-
-/* Styling af navbar-links */
-.navbar a {
-    text-decoration: none; /* Fjerner understregning på links */
-    color: #5e4795; /* Sætter farven på link-teksten til lilla */
-    font-weight: bold; /* Gør link-teksten fed */
-}
-
-/* Styling af navbar-links ved hover */
-.navbar a:hover {
-    color: #3d3570; /* Skifter link-farven til mørkere lilla ved hover */
-}
-
-/* Styling af navbar-billeder */
-.navbar img {
-    width: 100px; /* Sætter bredden af billederne i navbaren til 100px */
-}
-
-/* Skjuler menuen på små skærme */
-#menu-bar {
-    display: none; /* Skjuler menubar-elementet som standard */
-}
-
-/* Skjuler label på mobilskærme */
-label {
-    display: none; /* Skjuler label, som muligvis bruges til burger-menuen */
-}
-
-/* STYLE FOR DROPDOWN MENUPUNKTER */
-/* Skjuler dropdown-menuen som standard */
-.navbar li ul {
-    display: none; /* Skjuler undermenuen som standard */
-    position: absolute; /* Placering af menuen i forhold til dens parent */
-    background-color: #fff; /* Hvid baggrundsfarve for undermenuen */
-    padding: 10px; /* Indre mellemrum i undermenuen */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Tilføjer en skygge for dybdeeffekt */
-    z-index: 1; /* Sikrer, at dropdown-menuen er ovenpå andre elementer */
-}
-
-/* Når der hoveres på en liste-item, vises undermenuen */
-.navbar li:hover > ul {
-    display: block; /* Viser undermenuen når man hoverer over menu-item */
-}
+ .navbar {
+    display: flex;
+    align-items: center;
+ }
+ 
+ header .navbar ul{
+    list-style: none;
+ }
+ 
+ header .navbar ul li{
+    position: relative;
+    float: left;
+ }
+ 
+ header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color: #5e4795;
+    display: block;
+ 
+ }
+ 
+ header .navbar ul li a:hover{
+    background-color: rgba(108, 108, 108, 0.4);
+    color: #fff;
+ }
+ 
+ header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    background-color: rgba(169, 180, 223, 0.87);
+    display: none;
+ }
+ 
+ header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+ }
+ 
+ header .navbar ul li:focus-within > ul,
+ header .navbar ul li:hover > ul{
+    display: block;
+ }
+ 
+ #menu-bar{
+    
+    display: none;
+ }
+ 
+ header label{
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+ }
 
 /* FOOTER */
 /* Footer-styling - baggrund og tekstfarve */
@@ -233,6 +251,60 @@ footer {
     padding: 30px 15px; /* Justerer padding på mobile enheder */
 }
 
+header{
+    padding: 20px;
+    height: 10rem;
+ }
+ 
+
+ .headerbyt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+ }
+
+ header label{
+    display: block;
+    font-size: 3rem;
+    color: #5e4795;
+    display: flex;
+    align-items: center;
+ }
+ 
+ header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(169, 180, 223, 0.87);
+    border-top: 1px rgba(0,0,0,0.1);
+    display: none;
+ }
+ 
+ header .navbar ul li{
+    width: 100%;
+    position: relative;
+ }
+ 
+ header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+ }
+ 
+ header .navbar ul li ul li{
+    background-color: rgba(169, 180, 223, 0.87);
+ }
+ 
+ header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+ }
+ 
+ #menu-bar:checked ~ .navbar{
+    display: block;
+ }
+
 /* Footer logo - Justerer størrelsen på footer-logoet */
 .footerlogo {
     width: 3rem; /* Sætter bredden på logoet */
@@ -291,10 +363,11 @@ footer {
 .kontakt {
     text-align: left; /* Venstrestiller teksten */
     flex: 1; /* Gør sektionen fleksibel så den kan tilpasse sig */
-}
+} 
+    }
 
 /* Mobilskærme */
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
 
     /* Styling af logo på mobilskærme */
     .logo {
@@ -307,101 +380,63 @@ footer {
         padding-top: 1rem; /* Lidt padding på toppen af logoet */
         padding-bottom: 1rem; /* Lidt padding på bunden af logoet */
     }
-
-/* Skjuler burger-checkbox, som bruges til at kontrollere menuen */
-    .burger-checkbox {
-        display: none; /* Skjuler burger-checkboxen for mobilskærme */
-    }
     
-/* Styling af burger-menuen */
-    .burger {
-        color: #5e4795; /* Sætter farven på burger-ikonet */
-        display: flex; /* Bruger flexbox til at arrangere burger-linjerne vertikalt */
-        flex-direction: column; /* Arranger burger-linjerne vertikalt */
-        cursor: pointer; /* Ændrer musen til en pointer ved hover */
-        position: absolute; /* Positionerer burger-menuen absolut */
-        top: 1rem; /* Placerer burger-menuen 1 rem fra toppen af skærmen */
-        right: 1rem; /* Placerer burger-menuen 1 rem fra højre kant af skærmen */
-        width: 1rem; /* Sætter bredden på burger-ikonet */
-        margin: 0.5rem; /* Tilføjer margin omkring burger-ikonet */
-        font-size: 2.6rem; /* Gør burger-ikonet større */
-    }
+    header{
+        padding: 20px;
+        height: 10rem;
+        
+     }
+     
+    
+     .headerbyt {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+     }
+    
+     header label{
+        display: block;
+        font-size: 3rem;
+        color: #5e4795;
+        display: flex;
+        align-items: center;
+     }
+     
+     header .navbar{    
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(169, 180, 223, 0.87);
+        border-top: 1px rgba(0,0,0,0.1);
+        display: none;
+        
+     }
+     
+     header .navbar ul li{
+        width: 100%;
+     }
+     
+     header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+     }
+     
+     header .navbar ul li ul li{
+        background-color: rgba(169, 180, 223, 0.87);
+     }
+     
+     header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+     }
+     
+     #menu-bar:checked ~ .navbar{
+        display: block;
+     }
 
-    /* Når en listeelement (li) er i fokus eller bliver hoveret over, vis undermenuen */
-.navbar ul li:focus-within > ul,
-.navbar ul li:hover > ul {
-    display: block; /* Gør undermenuen synlig, når li er i fokus eller hoveres */
-}
-
-/* Styling af navigationsbaren (navbar) */
-.navbar {
-    display: none; /* Skjuler navbaren som standard */
-    background-color: #5e4795; /* Sætter en baggrundsfarve til navbaren */
-    position: absolute; /* Gør navbaren absolut placeret i forhold til dens forælder */
-    top: 5rem; /* Placerer navbaren 5 rem fra toppen af skærmen */
-    right: 0; /* Placerer navbaren i højre hjørne af skærmen */
-    width: 100%; /* Gør navbaren 100% bred */
-    text-align: left; /* Justerer tekstindholdet til venstre i navbaren */
-    font-family: 'Jockey One', sans-serif; /* Sætter fonten til 'Jockey One' */
-    z-index: 9999; /* Sørger for at navbaren er oven på andre elementer */
-}
-
-/* Når burger-menuen er checked, vises menuen */
-.burger-checkbox:checked ~ .menubar {
-    display: block; /* Gør menulinjen synlig, når burger-checkboxen er checked */
-}
-
-/* Menuens indhold */
-.navbar ul {
-    display: block; /* Viser menupunkterne i blokke */
-    width: 100%; /* Fylder hele bredden */
-    gap: 0; /* Ingen afstand mellem elementer */
-    list-style: none; /* Fjerner punktopstilling */
-}
-
-/* Menuens punkter */
-.navbar ul li {
-    width: 220px; /* Bredde på menupunkterne */
-    margin: 15px; /* Mellemrum mellem menupunkterne */
-    padding: 15px; /* Indre mellemrum for tekst */
-    list-style: none; /* Fjerner punktopstilling */
-}
-
-.navbar ul li a {
-    color: white; /* Hvid tekstfarve */
-    text-decoration: none; /* Ingen understregning */
-}
-
-/* Undermenu */
-.navbar ul li ul {
-    display: none; /* Skjuler undermenuen som standard */
-}
-
-.navba ul li ul li {
-    padding: 10px; /* Indre mellemrum i undermenuen */
-    color: white; /* Hvid tekstfarve */
-}
-
-.navbar ul li ul li {
-    text-align: left; /* Justerer teksten til venstre */
-    padding: 0.5rem 1rem; /* Tilføjer padding for indrykning */
-}
-
-.navbar ul li ul li a {
-    color: white; /* Hvid tekstfarve */
-    text-decoration: none; /* Ingen understregning */
-    font-size: 0.9rem; /* Mindre tekststørrelse */
-}
-
-.navbar ul li ul li a:hover {
-    text-decoration: none; /* Ingen understregning ved hover */
-    color: #a9b4df; /* Skifter tekstfarve ved hover */
-}
-
-footer {
-    padding: 30px 15px; /* Justerer padding på mobile enheder */
-}
-
+/* FOOTER */
 .footerlogo {
     width: 20px; /* Mindre logo på mobile enheder */
     height: 20px; /* Mindre logo på mobile enheder */
@@ -411,19 +446,12 @@ footer {
     text-align: center; /* Centrerer teksten på små skærme */
 }
 
-/* FOOTER */
-footer {
-    background-color: #313131; /* Gør baggrunden sort */
-    padding: 40px 20px; /* Polstring rundt om indholdet */
-    color: white; /* Hvid tekstfarve */
-    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen Jockey One */
-}
-
 footer {
     display: flex; /* Brug flexbox for layout */
     background-color: #313131; /* Sort baggrund */
     padding: 0.7rem; /* Polstring rundt om footer */
     color: white; /* Hvid tekstfarve */
+    font-family: 'Jockey One', sans-serif; /* Bruger skrifttypen Jockey One */
     flex-direction: column; /* Arrangerer elementerne i en kolonne */
     text-align: left; /* Venstrestiller teksten */
 }
