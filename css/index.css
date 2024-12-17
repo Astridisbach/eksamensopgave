@@ -338,7 +338,7 @@ form button:hover {
     max-width: 90%; /* Sætter den maksimale bredde på billedet til 90% af forælderen */
     height: auto; /* Bevarer billedets proportioner ved at justere højden automatisk */
     margin-top: 4rem; /* Tilføjer margin øverst for at give plads over billedet */
-    margin-right: -0.6rem; /* Tilføjer en lille negativ margin til højre for at justere placeringen */
+    margin-right: -3.5rem; /* Tilføjer en lille negativ margin til højre for at justere placeringen */
     border-radius: 8px; /* Runder hjørnerne af billedet */
 }
 
@@ -544,9 +544,9 @@ form button:hover {
     display: flex; /* Gør sponsor-containeren til et flex-container */
     justify-content: center; /* Centrerer indholdet horisontalt */
     padding: 1.6rem; /* Giver indvendig afstand på 1.6rem omkring containerens indhold */
-    flex-direction: column; /* Lægger indholdet i en kolonne (vertikalt) */
+    flex-direction: row; /* Lægger indholdet i en kolonne (vertikalt) */
     align-items: center; /* Centrerer indholdet på tværs af containerens hovedakse */
-    gap: 0px; /* Der er ingen afstand mellem børnene i containeren */
+    gap: 4rem; /* Der er ingen afstand mellem børnene i containeren */
 }
 
 .sponsor-container img {
